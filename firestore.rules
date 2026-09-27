@@ -2,31 +2,45 @@ rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
-    function isOwner() {
-      return request.auth != null && request.auth.uid == 'OWNER_UID_TO_CONFIGURE';
+    function isSignedIn() {
+      return request.auth != null;
     }
 
-    match /publicCatalog/{productId} {
-      allow read: if resource.data.status == 'active';
+    // Firebase Auth UIDs are public identifiers, not passwords. Vite env values are
+    // unavailable to Rules, so this OWNER identifier is deployed with the ruleset.
+    function isOwner() {
+      return isSignedIn() && request.auth.uid == 'QuhtRLU25hgdKO87nyNrVUc0zFm1';
+    }
+
+    // Public documents are physically separated; Rules cannot hide private fields.
+    match /publicTenants/{tenantId}/products/{productId} {
+      allow read: if resource.data.isPublished == true;
       allow write: if isOwner();
     }
 
-    match /publicStoreConfig/main {
+    match /publicTenants/{tenantId}/storeConfig/main {
       allow read: if true;
       allow write: if isOwner();
     }
 
-    match /products/{document=**} { allow read, write: if isOwner(); }
-    match /inventory/{document=**} { allow read, write: if isOwner(); }
-    match /inventoryMovements/{document=**} { allow read, write: if isOwner(); }
-    match /inventoryBatches/{document=**} { allow read, write: if isOwner(); }
-    match /orders/{document=**} { allow read, write: if isOwner(); }
-    match /customers/{document=**} { allow read, write: if isOwner(); }
-    match /promotions/{document=**} { allow read, write: if isOwner(); }
-    match /taxonomy/{document=**} { allow read, write: if isOwner(); }
-    match /storeConfig/{document=**} { allow read, write: if isOwner(); }
-    match /businessSettings/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId} {
+      allow read, write: if isOwner();
+    }
 
-    match /{document=**} { allow read, write: if false; }
+    match /tenants/{tenantId}/products/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/customers/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/orders/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/paymentProofs/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/conversations/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/humanEscalations/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/orderEvents/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/inventory/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/inventoryMovements/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/inventoryBatches/{document=**} { allow read, write: if isOwner(); }
+    match /tenants/{tenantId}/businessSettings/{document=**} { allow read, write: if isOwner(); }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
   }
 }
