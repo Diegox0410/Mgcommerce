@@ -1,4 +1,5 @@
 import type { EntityId, ISODateString } from '../shared/types'
+import type { SalesSource } from '../orders/sales-attribution'
 
 export interface Address {
   province: string
@@ -9,13 +10,11 @@ export interface Address {
 
 export interface Customer {
   id: EntityId
-  firstName: string
-  lastName: string
-  email: string
+  tenantId: EntityId
+  name: string
   phone: string
-  addresses: Address[]
-  tags: string[]
-  notes: string[]
+  email?: string
+  source?: SalesSource
   createdAt: ISODateString
   updatedAt: ISODateString
 }

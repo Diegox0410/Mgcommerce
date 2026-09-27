@@ -160,10 +160,10 @@ describe('OrderDraft', () => {
 
 describe('order snapshots and public projection', () => {
   it('retains historical commercial values', () => {
-    const snapshot = createOrderItemSnapshot({ productId: 'p-1', name: 'Nombre histórico', categoryIds: ['c-1'], unitPrice: 20, unitCost: 9, quantity: 2, discount: 5 })
-    expect(snapshot.lineTotal).toBe(35)
-    expect(snapshot.name).toBe('Nombre histórico')
-    expect(snapshot.unitCost).toBe(9)
+    const snapshot = createOrderItemSnapshot({ productId: 'p-1', productName: 'Nombre histórico', categoryId: 'c-1', unitPrice: 2_000, quantity: 2 })
+    expect(snapshot.lineTotal).toBe(4_000)
+    expect(snapshot.productName).toBe('Nombre histórico')
+    expect(snapshot).not.toHaveProperty('unitCost')
   })
   it('excludes costs, exact inventory and private SKUs', () => {
     const projection = toPublicProduct(privateProduct, { productId: 'p-1', available: 7, reserved: 1, minimumStock: 2, updatedAt: privateProduct.updatedAt })
