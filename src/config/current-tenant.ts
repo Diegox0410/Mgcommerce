@@ -1,5 +1,5 @@
 export const currentTenant = {
-  id: 'mg-salud-belleza',
+  id: 'tenant-mg',
 } as const
 
 export type CurrentTenantId = typeof currentTenant.id

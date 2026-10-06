@@ -56,6 +56,19 @@ export interface Product {
   updatedAt: ISODateString
 }
 
+export interface PublicProductVariant {
+  id: EntityId
+  name: string
+  attributes: Record<string, string>
+  regularPrice: number | null
+  promotionalPrice?: number | null
+  active: boolean
+  imageId?: EntityId
+  available: boolean
+  availableQuantity: number | null
+  availabilityStatus?: string
+}
+
 export interface PublicProduct {
   id: EntityId
   slug: string
@@ -67,12 +80,16 @@ export interface PublicProduct {
   concernIds: EntityId[]
   collectionIds: EntityId[]
   images: ProductImage[]
-  variants: Array<Omit<ProductVariant, 'sku'>>
-  regularPrice: number
-  promotionalPrice?: number
+  variants: PublicProductVariant[]
+  regularPrice: number | null
+  promotionalPrice?: number | null
+  currency: string | null
+  pricingStatus: 'READY' | 'PENDING'
   featured: boolean
   isNew?: boolean
   available: boolean
+  availableQuantity: number | null
+  availabilityStatus?: string
   information?: ProductInformation
   taxonomy: {
     brand?: PublicTaxonomyReference
@@ -82,5 +99,5 @@ export interface PublicProduct {
   }
   source?: 'sample' | 'remote'
   seo: SeoMetadata
-  updatedAt: ISODateString
+  updatedAt?: ISODateString
 }

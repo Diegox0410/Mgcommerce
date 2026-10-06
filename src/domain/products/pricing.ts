@@ -15,8 +15,10 @@ export const effectivePrice = (
   return promotionalPrice
 }
 
-export const productPrice = (product: Product | PublicProduct): number =>
-  effectivePrice(product.regularPrice, product.promotionalPrice)
+export const productPrice = (product: Product | PublicProduct): number | null => {
+  if (product.regularPrice === null) return null
+  return effectivePrice(product.regularPrice, product.promotionalPrice ?? undefined)
+}
 
 const cents = (amount: number): number => {
   if (!validPrice(amount)) throw new Error('El monto no es válido.')

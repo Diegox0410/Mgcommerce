@@ -17,15 +17,15 @@ const timestamp = (iso: string) => ({ toDate: () => new Date(iso) })
 
 describe('tenant Firestore paths', () => {
   it('centralizes the current tenant and builds private paths', () => {
-    expect(currentTenant.id).toBe('mg-salud-belleza')
-    expect(tenantPath(currentTenant.id)).toBe('tenants/mg-salud-belleza')
-    expect(tenantCollectionPath(currentTenant.id, 'orders')).toBe('tenants/mg-salud-belleza/orders')
-    expect(tenantDocumentPath(currentTenant.id, 'orders', 'order-1')).toBe('tenants/mg-salud-belleza/orders/order-1')
+    expect(currentTenant.id).toBe('tenant-mg')
+    expect(tenantPath(currentTenant.id)).toBe('tenants/tenant-mg')
+    expect(tenantCollectionPath(currentTenant.id, 'orders')).toBe('tenants/tenant-mg/orders')
+    expect(tenantDocumentPath(currentTenant.id, 'orders', 'order-1')).toBe('tenants/tenant-mg/orders/order-1')
   })
 
   it('builds physically separate public paths and rejects path injection', () => {
-    expect(publicProductsPath(currentTenant.id)).toBe('publicTenants/mg-salud-belleza/products')
-    expect(publicStoreConfigPath(currentTenant.id)).toBe('publicTenants/mg-salud-belleza/storeConfig/main')
+    expect(publicProductsPath(currentTenant.id)).toBe('publicTenants/tenant-mg/products')
+    expect(publicStoreConfigPath(currentTenant.id)).toBe('publicTenants/tenant-mg/storeConfig/main')
     expect(() => tenantPath('tenant/other')).toThrow('segmento Firestore válido')
   })
 })

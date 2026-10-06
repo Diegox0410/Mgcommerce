@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { publicCatalogRepository } from '../repositories/sample-public-catalog-repository'
+import { publicCatalogRepository } from '../repositories/chopify-public-catalog-repository'
 import { useCatalogStore } from '../stores/catalog-store'
 
 export function useCatalogBootstrap(): void {

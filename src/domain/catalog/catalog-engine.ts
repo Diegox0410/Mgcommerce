@@ -40,8 +40,8 @@ export function filterProducts(products: PublicProduct[], filters: CatalogFilter
       && (!product.taxonomy.brand || filters.brand.length === 0 || filters.brand.includes(product.taxonomy.brand.slug))
       && taxonomyMatches(product.taxonomy.concerns, filters.concern)
       && taxonomyMatches(product.taxonomy.collections, filters.collection)
-      && (filters.minPrice === undefined || price >= filters.minPrice)
-      && (filters.maxPrice === undefined || price <= filters.maxPrice)
+      && (filters.minPrice === undefined || (price !== null && price >= filters.minPrice))
+      && (filters.maxPrice === undefined || (price !== null && price <= filters.maxPrice))
       && (!filters.promotion || product.promotionalPrice !== undefined)
       && (!filters.availability || product.available)
   })
@@ -49,8 +49,8 @@ export function filterProducts(products: PublicProduct[], filters: CatalogFilter
 
 export function sortProducts(products: PublicProduct[], sort: CatalogSort): PublicProduct[] {
   const result = [...products]
-  if (sort === 'price-asc') return result.sort((a, b) => productPrice(a) - productPrice(b))
-  if (sort === 'price-desc') return result.sort((a, b) => productPrice(b) - productPrice(a))
+  if (sort === 'price-asc') return result.sort((a, b) => (productPrice(a) ?? Number.POSITIVE_INFINITY) - (productPrice(b) ?? Number.POSITIVE_INFINITY))
+  if (sort === 'price-desc') return result.sort((a, b) => (productPrice(b) ?? Number.NEGATIVE_INFINITY) - (productPrice(a) ?? Number.NEGATIVE_INFINITY))
   if (sort === 'name') return result.sort((a, b) => a.name.localeCompare(b.name, 'es'))
   if (sort === 'new') return result.sort((a, b) => Number(Boolean(b.isNew)) - Number(Boolean(a.isNew)))
   return result.sort((a, b) => Number(b.featured) - Number(a.featured))

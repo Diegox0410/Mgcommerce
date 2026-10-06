@@ -4,7 +4,7 @@ import { activeFilterCount, parseCatalogParams, toCatalogParams } from '../src/d
 import { applyInventoryDelta, type Inventory } from '../src/domain/inventory/inventory'
 import { completeOrderDraft, createOrderDraft, validateCheckout } from '../src/domain/orders/order-draft'
 import { createOrderItemSnapshot } from '../src/domain/orders/order'
-import { discountAmount, discountPercent, effectivePrice, formatMoney, lineTotal, subtotal } from '../src/domain/products/pricing'
+import { discountAmount, discountPercent, effectivePrice, productPrice, formatMoney, lineTotal, subtotal } from '../src/domain/products/pricing'
 import { toPublicProduct } from '../src/domain/products/public-projection'
 import type { Product, PublicProduct } from '../src/domain/products/product'
 import { defaultStoreConfig } from '../src/domain/store/store-config'
@@ -59,7 +59,7 @@ describe('catalog engine', () => {
     expect(result.map((item) => item.slug)).toEqual(['serum-facial-sample'])
   })
   it('filters inclusive price ranges', () => {
-    expect(filterProducts(products, { ...defaultCatalogFilters, minPrice: 20, maxPrice: 25 }).every((item) => effectivePrice(item.regularPrice, item.promotionalPrice) >= 20)).toBe(true)
+    expect(filterProducts(products, { ...defaultCatalogFilters, minPrice: 20, maxPrice: 25 }).every((item) => (productPrice(item) ?? Number.NEGATIVE_INFINITY) >= 20)).toBe(true)
   })
   it('sorts by price without mutating input', () => {
     const before = products.map((item) => item.id)
@@ -74,7 +74,7 @@ describe('catalog engine', () => {
   it('applies search, filter and sort as one pure operation', () => {
     const result = applyCatalog(products, { ...defaultCatalogFilters, concern: ['hidratacion'], sort: 'price-desc' })
     expect(result.length).toBeGreaterThan(1)
-    expect(result[0].regularPrice).toBeGreaterThanOrEqual(result[1].regularPrice)
+    expect(productPrice(result[0]) ?? Number.NEGATIVE_INFINITY).toBeGreaterThanOrEqual(productPrice(result[1]) ?? Number.NEGATIVE_INFINITY)
   })
 })
 

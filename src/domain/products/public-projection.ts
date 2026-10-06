@@ -8,16 +8,33 @@ export interface PublicTaxonomyProjection {
   collections?: PublicTaxonomyReference[]
 }
 
-export function toPublicProduct(product: Product, inventory?: Inventory, taxonomy: PublicTaxonomyProjection = {}): PublicProduct {
+export function toPublicProduct(
+  product: Product,
+  inventory?: Inventory,
+  taxonomy: PublicTaxonomyProjection = {},
+): PublicProduct {
   const { cost: _privateCost, ...safe } = product
   void _privateCost
+
+  const available =
+    product.status === 'active' &&
+    (inventory?.available ?? 0) > 0
+
   return {
     ...safe,
     variants: product.variants.map(({ sku: _sku, ...variant }) => {
       void _sku
-      return variant
+
+      return {
+        ...variant,
+        available,
+        availableQuantity: inventory?.available ?? null,
+      }
     }),
-    available: product.status === 'active' && (inventory?.available ?? 0) > 0,
+    currency: null,
+    pricingStatus: 'READY',
+    available,
+    availableQuantity: inventory?.available ?? null,
     taxonomy: {
       brand: taxonomy.brand,
       categories: taxonomy.categories ?? [],
