@@ -192,8 +192,8 @@ describe('StoreConfig defaults', () => {
   it('centralizes navigation, home visibility and checkout sample mode', () => {
     expect(defaultStoreConfig.header.navigation.length).toBeGreaterThan(0)
     expect(defaultStoreConfig.home.sections.every((section) => typeof section.enabled === 'boolean')).toBe(true)
-    expect(defaultStoreConfig.checkout.mode).toBe('sample')
-    expect(defaultStoreConfig.checkout.paymentMethods.every((method) => method.sampleOnly)).toBe(true)
+    expect(defaultStoreConfig.checkout.mode).toBe('live')
+    expect(defaultStoreConfig.checkout.paymentMethods.some((method) => method.enabled && !method.sampleOnly)).toBe(true)
   })
 })
 
