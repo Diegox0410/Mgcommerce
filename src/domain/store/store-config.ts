@@ -100,9 +100,9 @@ export const defaultStoreConfig: StoreConfig = {
     ],
   },
   checkout: {
-    mode: 'live',
+    mode: 'disabled',
     enabledFields: ['name', 'phone', 'email', 'address', 'city', 'reference'],
-    paymentMethods: [{ id: 'transfer', label: 'Transferencia bancaria · pendiente de verificación', enabled: true }],
+    paymentMethods: [],
   },
   appearance: { theme: 'mg-light' },
 }

@@ -1,5 +1,5 @@
 import { ArrowLeft, Check, LockKeyhole } from 'lucide-react'
-import { useState, type FormEvent } from 'react'
+import { useRef, useState, type FormEvent } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { Input, Textarea } from '../../components/ui/FormControls'
 import { Button } from '../../components/ui/Button'
@@ -32,6 +32,7 @@ export function CheckoutPage() {
   const [errors, setErrors] = useState<CheckoutErrors>({})
   const [submitError, setSubmitError] = useState('')
   const [submitting, setSubmitting] = useState(false)
+  const idempotencyKey = useRef(createIdempotencyKey())
   const navigate = useNavigate()
 
   usePageMeta('Finalizar pedido')
@@ -92,7 +93,7 @@ export function CheckoutPage() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          idempotencyKey: createIdempotencyKey(),
+          idempotencyKey: idempotencyKey.current,
           customer: {
             name: input.name.trim(),
             phone: input.phone.trim(),
