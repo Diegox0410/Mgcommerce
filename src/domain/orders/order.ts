@@ -22,7 +22,7 @@ export interface Order {
   tenantId: EntityId
   customerId: EntityId
   items: OrderItemSnapshot[]
-  currency: 'USD'
+  currency: string
   subtotal: number
   discountTotal: number
   shippingTotal: number
@@ -50,6 +50,7 @@ export interface CreateOrderInput {
   tenantId: EntityId
   customerId: EntityId
   items: OrderItemSnapshot[]
+  currency: string
   discountTotal?: number
   shippingTotal?: number
   taxTotal?: number
@@ -60,6 +61,7 @@ export interface CreateOrderInput {
 
 export function createOrder(input: CreateOrderInput): Order {
   if (!input.id || !input.tenantId || !input.customerId || input.items.length === 0) throw new Error('El pedido requiere identidad, tenant, cliente e ítems.')
+  if (!input.currency.trim()) throw new Error('El pedido requiere una moneda explícita.')
   if (input.items.some((item) => !Number.isInteger(item.unitPrice) || !Number.isInteger(item.quantity) || item.quantity < 1 || item.lineTotal !== item.unitPrice * item.quantity)) {
     throw new Error('El pedido contiene un snapshot de ítem inconsistente.')
   }
@@ -73,7 +75,7 @@ export function createOrder(input: CreateOrderInput): Order {
   const timestamp = (input.now ?? new Date()).toISOString()
   return {
     id: input.id, tenantId: input.tenantId, customerId: input.customerId,
-    items: input.items.map((item) => ({ ...item })), currency: 'USD', subtotal, discountTotal,
+    items: input.items.map((item) => ({ ...item })), currency: input.currency.trim(), subtotal, discountTotal,
     shippingTotal, taxTotal, grandTotal: subtotal - discountTotal + shippingTotal + taxTotal,
     status: 'new', paymentStatus: 'unpaid', fulfillmentStatus: 'unfulfilled',
     source: input.attribution.source, attribution: { ...input.attribution }, commercialAgreement: { ...input.commercialAgreement },

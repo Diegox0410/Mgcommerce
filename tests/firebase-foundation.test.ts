@@ -34,7 +34,7 @@ describe('Firestore mappers', () => {
   it('round-trips an order preserving cents, basis points, attribution and statuses', () => {
     const item = createOrderItemSnapshot({ productId: 'product-1', productName: 'Snapshot', unitPrice: 12_345, quantity: 2 })
     const order = createOrder({
-      id: 'order-1', tenantId: currentTenant.id, customerId: 'customer-1', items: [item], discountTotal: 345,
+      id: 'order-1', tenantId: currentTenant.id, customerId: 'customer-1', items: [item], currency: 'USD', discountTotal: 345,
       shippingTotal: 500, taxTotal: 0,
       attribution: { source: 'whatsapp', managed: true, managedBy: 'mixed', automationAgent: 'ganobot', conversationId: 'conversation-1' },
       commercialAgreement: { managementFeeBasisPoints: 500 }, now: new Date(createdAt),

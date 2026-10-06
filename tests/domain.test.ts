@@ -3,13 +3,13 @@ import { applyCatalog, defaultCatalogFilters, filterProducts, normalizeSearch, r
 import { activeFilterCount, parseCatalogParams, toCatalogParams } from '../src/domain/catalog/catalog-query'
 import { applyInventoryDelta, type Inventory } from '../src/domain/inventory/inventory'
 import { completeOrderDraft, createOrderDraft, validateCheckout } from '../src/domain/orders/order-draft'
-import { createOrderItemSnapshot } from '../src/domain/orders/order'
+import { createOrder, createOrderItemSnapshot } from '../src/domain/orders/order'
 import { discountAmount, discountPercent, effectivePrice, productPrice, formatMoney, lineTotal, subtotal } from '../src/domain/products/pricing'
 import { toPublicProduct } from '../src/domain/products/public-projection'
 import type { Product, PublicProduct } from '../src/domain/products/product'
 import { defaultStoreConfig } from '../src/domain/store/store-config'
 import { SamplePublicCatalogRepository } from '../src/repositories/sample-public-catalog-repository'
-import { migrateCartState, sameCartLine, selectCartCount, selectCartSubtotal, useCartStore } from '../src/stores/cart-store'
+import { migrateCartState, sameCartLine, selectCartCount, selectCartCurrency, selectCartSubtotal, useCartStore } from '../src/stores/cart-store'
 
 const privateProduct: Product = {
   id: 'p-1', slug: 'sample', name: 'SAMPLE_DATA', shortDescription: '', description: '',
@@ -31,7 +31,7 @@ describe('pricing and safe money', () => {
     expect(discountAmount(24.9, 21.9)).toBe(3)
     expect(discountPercent(24.9, 21.9)).toBe(12)
   })
-  it('formats USD for Ecuador', () => expect(formatMoney(21.9)).toContain('21,90'))
+  it('formats USD for Ecuador', () => expect(formatMoney(21.9, 'USD')).toContain('21,90'))
 })
 
 describe('inventory invariants', () => {
@@ -104,7 +104,7 @@ describe('related products', () => {
 })
 
 describe('cart identity and totals', () => {
-  const first = { productId: 'p', variantId: 'a', slug: 'p', name: 'P', unitPrice: 10.1, quantity: 1 }
+  const first = { productId: 'p', variantId: 'a', slug: 'p', name: 'P', unitPrice: 10.1, currency: 'USD', quantity: 1 }
   const second = { ...first, variantId: 'b', quantity: 2 }
   it('uses product and variant as line identity', () => {
     expect(sameCartLine(first, { productId: 'p', variantId: 'a' })).toBe(true)
@@ -139,7 +139,7 @@ describe('cart identity and totals', () => {
 
 describe('OrderDraft', () => {
   const valid = { name: 'Persona Demo', phone: '099 000 0000', email: 'demo@example.test', address: 'Dirección SAMPLE 123', city: 'Quito', reference: '', paymentMethodId: 'sample' }
-  const items = [{ productId: 'p', slug: 'p', name: 'Producto', unitPrice: 10.1, quantity: 3 }]
+  const items = [{ productId: 'p', slug: 'p', name: 'Producto', unitPrice: 10.1, currency: 'USD', quantity: 3 }]
   it('returns accessible field errors for invalid checkout data', () => {
     const errors = validateCheckout({ ...valid, name: '', phone: '1', email: 'bad', address: '', city: '', paymentMethodId: '' })
     expect(Object.keys(errors).sort()).toEqual(['address', 'city', 'email', 'name', 'payment', 'phone'])
@@ -194,5 +194,100 @@ describe('StoreConfig defaults', () => {
     expect(defaultStoreConfig.home.sections.every((section) => typeof section.enabled === 'boolean')).toBe(true)
     expect(defaultStoreConfig.checkout.mode).toBe('sample')
     expect(defaultStoreConfig.checkout.paymentMethods.every((method) => method.sampleOnly)).toBe(true)
+  })
+})
+
+
+describe('explicit currency invariants', () => {
+  const usdLine = {
+    productId: 'currency-product',
+    slug: 'currency-product',
+    name: 'Currency Product',
+    unitPrice: 10,
+    currency: 'USD',
+    quantity: 1,
+  }
+
+  it('drops legacy persisted cart lines without currency', () => {
+    const legacy = {
+      productId: 'legacy',
+      slug: 'legacy',
+      name: 'Legacy',
+      unitPrice: 10,
+      quantity: 1,
+    }
+
+    expect(migrateCartState({ items: [usdLine, legacy] }).items).toEqual([usdLine])
+  })
+
+  it('rejects a second cart currency', () => {
+    useCartStore.setState({ items: [] })
+
+    useCartStore.getState().add(usdLine)
+    useCartStore.getState().add({
+      ...usdLine,
+      productId: 'eur-product',
+      slug: 'eur-product',
+      currency: 'EUR',
+    })
+
+    expect(useCartStore.getState().items).toHaveLength(1)
+    expect(selectCartCurrency(useCartStore.getState())).toBe('USD')
+  })
+
+  it('keeps one explicit currency in an order draft', () => {
+    const draft = createOrderDraft({
+      name: 'Persona Demo',
+      phone: '099 000 0000',
+      address: 'Direccion valida 123',
+      city: 'Guayaquil',
+      paymentMethodId: 'sample',
+      items: [usdLine],
+      now: new Date('2026-01-01T00:00:00.000Z'),
+    })
+
+    expect(draft.currency).toBe('USD')
+  })
+
+  it('rejects mixed currencies in an order draft', () => {
+    expect(() => createOrderDraft({
+      name: 'Persona Demo',
+      phone: '099 000 0000',
+      address: 'Direccion valida 123',
+      city: 'Guayaquil',
+      paymentMethodId: 'sample',
+      items: [usdLine, { ...usdLine, productId: 'eur-product', currency: 'EUR' }],
+    })).toThrow('una sola moneda')
+  })
+
+  it('requires and preserves explicit currency in domain orders', () => {
+    const item = createOrderItemSnapshot({
+      productId: 'p-currency',
+      productName: 'Currency Product',
+      unitPrice: 1000,
+      quantity: 1,
+    })
+
+    const base = {
+      id: 'order-currency',
+      tenantId: 'tenant-mg',
+      customerId: 'customer-currency',
+      items: [item],
+      discountTotal: 0,
+      shippingTotal: 0,
+      taxTotal: 0,
+      attribution: {
+        source: 'web' as const,
+        managed: false,
+        managedBy: 'human' as const,
+      },
+      commercialAgreement: {
+        managementFeeBasisPoints: 0,
+      },
+      now: new Date('2026-01-01T00:00:00.000Z'),
+    }
+
+    expect(createOrder({ ...base, currency: 'USD' }).currency).toBe('USD')
+    expect(() => createOrder({ ...base, currency: '   ' })).toThrow('moneda')
   })
 })

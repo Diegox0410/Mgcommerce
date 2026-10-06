@@ -13,7 +13,7 @@ const item = createOrderItemSnapshot({ productId: 'product-1', variantId: 'varia
 
 function orderFixture(): Order {
   return createOrder({
-    id: 'order-1', tenantId: 'tenant-1', customerId: 'customer-1', items: [item], discountTotal: 0,
+    id: 'order-1', tenantId: 'tenant-1', customerId: 'customer-1', items: [item], currency: 'USD', discountTotal: 0,
     shippingTotal: 1_500, taxTotal: 0, attribution, commercialAgreement: { managementFeeBasisPoints: 500 },
     now: new Date('2026-01-01T00:00:00.000Z'),
   })

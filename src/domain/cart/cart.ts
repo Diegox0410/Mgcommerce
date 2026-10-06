@@ -9,10 +9,11 @@ export interface CartItem {
   imageUrl?: string
   imageTone?: 'sage' | 'sand' | 'clay' | 'mist' | 'ink' | 'lime'
   unitPrice: number
+  currency: string
   quantity: number
 }
 
 export interface Cart {
   items: CartItem[]
-  currency: 'USD'
+  currency: string | null
 }

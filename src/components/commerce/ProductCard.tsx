@@ -16,14 +16,17 @@ export function ProductCard({ product }: { product: PublicProduct }) {
     : productPrice(product)
   const regularPrice = variant?.regularPrice ?? product.regularPrice
   const hasPrice = price !== null
-  const canQuickAdd =
+  const purchaseReady =
     product.available &&
     hasPrice &&
-    product.pricingStatus === 'READY' &&
+    product.currency !== null &&
+    product.pricingStatus === 'READY'
+  const canQuickAdd =
+    purchaseReady &&
     product.variants.length <= 1
 
   const quickAdd = () => {
-    if (price === null || product.pricingStatus !== 'READY') return
+    if (price === null || !product.currency || product.pricingStatus !== 'READY') return
 
     add({
       productId: product.id,
@@ -34,6 +37,7 @@ export function ProductCard({ product }: { product: PublicProduct }) {
       imageUrl: product.images[0]?.url,
       imageTone: product.images[0]?.placeholderTone,
       unitPrice: price,
+      currency: product.currency,
       quantity: 1,
     })
     openCart()
@@ -66,8 +70,8 @@ export function ProductCard({ product }: { product: PublicProduct }) {
       {product.taxonomy.brand && <span>{product.taxonomy.brand.name}</span>}
       <h3><Link to={`/producto/${product.slug}`}>{product.name}</Link></h3>
       <div className="product-card__price">
-        <strong>{price === null ? 'Precio por confirmar' : formatMoney(price)}</strong>
-        {hasDiscount && <del>{formatMoney(regularPrice)}</del>}
+        <strong>{price === null || !product.currency ? 'Precio por confirmar' : formatMoney(price, product.currency)}</strong>
+        {hasDiscount && product.currency && <del>{formatMoney(regularPrice, product.currency)}</del>}
       </div>
       {product.variants.length > 1 && <small>{product.variants.length} opciones</small>}
     </div>

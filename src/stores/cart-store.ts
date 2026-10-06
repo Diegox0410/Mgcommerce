@@ -22,6 +22,7 @@ export const migrateCartState = (persisted: unknown): Pick<CartState, 'items'> =
     return typeof value.productId === 'string' && typeof value.name === 'string'
       && Number.isInteger(value.quantity) && Number(value.quantity) > 0
       && Number.isFinite(value.unitPrice) && Number(value.unitPrice) >= 0
+      && typeof value.currency === 'string' && value.currency.trim().length > 0
   }) : []
   return { items }
 }
@@ -32,6 +33,8 @@ export const useCartStore = create<CartState>()(
       items: [],
       add: (item) => set((state) => {
         if (!Number.isInteger(item.quantity) || item.quantity < 1) return state
+        if (!item.currency.trim()) return state
+        if (state.items.some((line) => line.currency !== item.currency)) return state
         const existing = state.items.find((line) => sameLine(line, item))
         return {
           items: existing
@@ -51,7 +54,7 @@ export const useCartStore = create<CartState>()(
     }),
     {
       name: 'mg-cart',
-      version: 2,
+      version: 3,
       partialize: (state) => ({ items: state.items }),
       migrate: migrateCartState,
     },
@@ -60,4 +63,10 @@ export const useCartStore = create<CartState>()(
 
 export const selectCartCount = (state: CartState): number => state.items.reduce((total, item) => total + item.quantity, 0)
 export const selectCartSubtotal = (state: CartState): number => subtotal(state.items)
+
+export const selectCartCurrency = (state: CartState): string | null => {
+  if (state.items.length === 0) return null
+  const currency = state.items[0].currency
+  return state.items.every((item) => item.currency === currency) ? currency : null
+}
 export { sameLine as sameCartLine }

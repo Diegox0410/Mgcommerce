@@ -32,7 +32,7 @@ export function toPublicProduct(
       }
     }),
     currency: null,
-    pricingStatus: 'READY',
+    pricingStatus: 'PENDING',
     available,
     availableQuantity: inventory?.available ?? null,
     taxonomy: {

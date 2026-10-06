@@ -20,6 +20,7 @@ export interface OrderDraft {
   delivery: CheckoutDelivery
   paymentMethodId: string
   items: CartItem[]
+  currency: string
   subtotal: number
   createdAt: string
   completedAt?: string
@@ -42,12 +43,15 @@ export function createOrderDraft(input: CheckoutContact & CheckoutDelivery & { p
   if (input.items.length === 0) throw new Error('No se puede crear un borrador sin productos.')
   const errors = validateCheckout(input)
   if (Object.keys(errors).length) throw new Error('El checkout contiene datos inválidos.')
+  const currencies = new Set(input.items.map((item) => item.currency.trim()).filter(Boolean))
+  if (currencies.size !== 1) throw new Error('El carrito debe tener una sola moneda válida.')
+  const currency = [...currencies][0]
   const now = input.now ?? new Date()
   return {
     id: crypto.randomUUID(), mode: 'sample',
     contact: { name: input.name.trim(), phone: input.phone.trim(), email: input.email?.trim() || undefined },
     delivery: { address: input.address.trim(), city: input.city.trim(), reference: input.reference?.trim() || undefined },
-    paymentMethodId: input.paymentMethodId, items: input.items.map((item) => ({ ...item })), subtotal: subtotal(input.items), createdAt: now.toISOString(),
+    paymentMethodId: input.paymentMethodId, items: input.items.map((item) => ({ ...item })), currency, subtotal: subtotal(input.items), createdAt: now.toISOString(),
   }
 }
 

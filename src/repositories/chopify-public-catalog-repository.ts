@@ -127,9 +127,11 @@ const mapProduct = (value: unknown): PublicProduct | null => {
   const summary = text(source.commercialSummary)
   const category = text(source.category)
   const price = nullableNumber(source.price)
-  const pricingStatus = source.pricingStatus === 'READY' && price !== null
-    ? 'READY'
-    : 'PENDING'
+  const currency = text(source.currency).trim()
+  const pricingStatus =
+    source.pricingStatus === 'READY' && price !== null && currency
+      ? 'READY'
+      : 'PENDING'
 
   const variants = Array.isArray(source.variants)
     ? source.variants
@@ -153,7 +155,7 @@ const mapProduct = (value: unknown): PublicProduct | null => {
     images: mapImages(source.images, text(source.imageUrl)),
     variants,
     regularPrice: price,
-    currency: text(source.currency) || null,
+    currency: currency || null,
     pricingStatus,
     featured: false,
     available: source.available === true,

@@ -43,5 +43,7 @@ export const discountPercent = (regularPrice: number, promotionalPrice?: number)
   return Math.round((discountAmount(regularPrice, promotionalPrice) / regularPrice) * 100)
 }
 
-export const formatMoney = (amount: number): string =>
-  new Intl.NumberFormat('es-EC', { style: 'currency', currency: 'USD' }).format(amount)
+export const formatMoney = (amount: number, currency: string): string => {
+  if (!currency.trim()) throw new Error('La moneda es obligatoria.')
+  return new Intl.NumberFormat('es-EC', { style: 'currency', currency }).format(amount)
+}
