@@ -193,7 +193,7 @@ describe('StoreConfig defaults', () => {
     expect(defaultStoreConfig.header.navigation.length).toBeGreaterThan(0)
     expect(defaultStoreConfig.home.sections.every((section) => typeof section.enabled === 'boolean')).toBe(true)
     expect(defaultStoreConfig.checkout.mode).toBe('disabled')
-    expect(defaultStoreConfig.checkout.paymentMethods.some((method) => method.enabled && !method.sampleOnly)).toBe(true)
+    expect(defaultStoreConfig.checkout.paymentMethods).toEqual([])
   })
 })
 
