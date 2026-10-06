@@ -189,10 +189,10 @@ describe('StoreConfig defaults', () => {
     expect(defaultStoreConfig.whatsapp.enabled).toBe(false)
     expect(defaultStoreConfig.announcement.enabled).toBe(false)
   })
-  it('centralizes navigation, home visibility and checkout sample mode', () => {
+  it('centralizes navigation, home visibility and safe checkout defaults', () => {
     expect(defaultStoreConfig.header.navigation.length).toBeGreaterThan(0)
     expect(defaultStoreConfig.home.sections.every((section) => typeof section.enabled === 'boolean')).toBe(true)
-    expect(defaultStoreConfig.checkout.mode).toBe('live')
+    expect(defaultStoreConfig.checkout.mode).toBe('disabled')
     expect(defaultStoreConfig.checkout.paymentMethods.some((method) => method.enabled && !method.sampleOnly)).toBe(true)
   })
 })
