@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+/* MG — Champagne & Taupe */
+
+:root {
+  --mg-ink: #302925;
+  --mg-ivory: #F4EDE5;
+  --mg-porcelain: #FAF7F2;
+  --mg-stone: #DED5CA;
+  --mg-sage: #B7A394;
+  --mg-lime: #DCC5AF;
+
+  --mg-editorial-green: #554943;
+  --mg-editorial-cream: #FAF7F2;
+  --mg-editorial-sand: #E8DDD0;
+  --mg-editorial-text: #302925;
+  --mg-editorial-muted: #766A63;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', Arial, sans-serif;
+}
+
+body {
+  background: #FAF7F2;
+  color: #302925;
+}
+
+.mg-home {
+  background: #FAF7F2;
+  color: #302925;
+}
+
+/* Encabezado */
+.site-header.mg-header {
+  background: rgba(250,247,242,.97);
+  border-bottom-color: #E8DDD0;
+}
+
+.mg-header__brand,
+.mg-header__icon,
+.mg-header__menu {
+  color: #302925;
+}
+
+.mg-header__contact {
+  background: #554943;
+  color: #FFFFFF;
+}
+
+.mg-header__contact:hover {
+  background: #756258;
+}
+
+/* Portada */
+.mg-hero {
+  background: #E8DDD0;
+}
+
+.mg-hero__shade {
+  background: linear-gradient(
+    90deg,
+    rgba(250,247,242,.97) 0%,
+    rgba(250,247,242,.88) 34%,
+    rgba(250,247,242,.22) 68%,
+    transparent 100%
+  );
+}
+
+.mg-hero h1,
+.mg-hero .mg-kicker {
+  color: #302925;
+}
+
+.mg-hero__copy > p {
+  color: #665C55;
+}
+
+/* Botones */
+.mg-btn--primary,
+.mg-booking__submit {
+  background: #554943;
+  border-color: #554943;
+  color: white;
+}
+
+.mg-btn--primary:hover,
+.mg-booking__submit:hover:not(:disabled) {
+  background: #756258;
+}
+
+.mg-btn--outline {
+  color: #554943;
+  border-color: #554943;
+}
+
+.mg-btn--light {
+  background: #FAF7F2;
+  border-color: #FAF7F2;
+  color: #554943;
+}
+
+/* Secciones */
+.mg-intro,
+.mg-catalog-teaser {
+  background: #FAF7F2;
+}
+
+.mg-intro h2 em,
+.mg-story h2 em {
+  color: #A58C7B;
+}
+
+.mg-services {
+  background: #F1EAE2;
+}
+
+.mg-story {
+  background: #EAE1D8;
+}
+
+.mg-story p,
+.mg-service p {
+  color: #766A63;
+}
+
+.mg-contact {
+  background: #4B403B;
+}
+
+/* Página de citas */
+.mg-booking {
+  background: #FAF7F2;
+  color: #302925;
+}
+
+.mg-booking--calendar .mg-booking__hero {
+  background: #F1EAE2;
+}
+
+.mg-booking__service,
+.mg-calendar {
+  background: #FFFCF8;
+  border-color: #E4DAD0;
+}
+
+.mg-booking__service.is-selected {
+  background: #F1E7DE;
+  border-color: #9D8475;
+}
+
+.is-selected .mg-booking__check {
+  background: #554943;
+  border-color: #554943;
+}
+
+.mg-booking__summary-inner,
+.mg-booking--calendar .mg-booking__summary-inner {
+  background: #EDE3D9;
+}
+
+.mg-booking__time-grid button.is-selected,
+.mg-calendar__day.is-selected {
+  background: #554943;
+  border-color: #554943;
+  color: white;
+}
+
+.mg-calendar__day.is-today:not(.is-selected) {
+  border-color: #9D8475;
+}
+
+.mg-calendar__legend-selected {
+  background: #554943;
+}
+
+.mg-booking__copy {
+  border-color: #554943;
+  color: #554943;
+}
+
+.mg-booking__label input:focus,
+.mg-booking__label textarea:focus {
+  outline-color: #B7A394;
+}
+
+/* Refinamiento tipográfico */
+.mg-hero h1 {
+  font-size: clamp(4rem, 6.4vw, 7.1rem);
+  line-height: .99;
+}
+
+.mg-intro h2,
+.mg-story h2,
+.mg-catalog-teaser h2,
+.mg-contact h2,
+.mg-booking__hero h1 {
+  letter-spacing: -.035em;
+  line-height: 1.05;
+}
+
+.mg-service h3 {
+  font-size: clamp(2rem, 2.6vw, 2.8rem);
+}
+
+.mg-header__nav a,
+.mg-btn,
+.mg-booking__label,
+.mg-booking__submit {
+  font-family: var(--font-body);
+}
+
+/* Mantener buena lectura en móviles */
+@media (max-width: 850px) {
+  .mg-hero__shade {
+    background: linear-gradient(
+      0deg,
+      rgba(250,247,242,.98) 0%,
+      rgba(250,247,242,.88) 38%,
+      rgba(250,247,242,.05) 100%
+    );
+  }
+}
+
+@media (max-width: 580px) {
+  .mg-hero h1 {
+    font-size: clamp(3.2rem, 12vw, 4.8rem);
+  }
+}
+/* Logotipo vectorial MG */
+
+.mg-header__brand--vector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 86px;
+}
+
+.mg-header__vector-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 580px) {
+  .mg-header__brand--vector {
+    width: 76px;
+    height: 70px;
+  }
+}
+
+/* ==========================================
+   MG SALUD & BELLEZA
+   Footer editorial con logotipo vectorial
+   ========================================== */
+
+.site-footer.mg-footer {
+  background: #302925;
+  color: #FAF7F2;
+  padding-top: clamp(3rem, 6vw, 6rem);
+}
+
+.mg-footer__lead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.mg-footer__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: #FAF7F2;
+  transition: transform .3s ease;
+}
+
+.mg-footer__brand:hover {
+  transform: translateY(-3px);
+}
+
+.mg-footer__logo {
+  display: block;
+  width: 220px;
+  height: 220px;
+}
+
+.mg-footer__description {
+  max-width: 480px;
+}
+
+.mg-footer__eyebrow {
+  display: block;
+  margin-bottom: 1.2rem;
+  color: #CFB995;
+  font-size: .7rem;
+  font-weight: 650;
+  letter-spacing: .2em;
+}
+
+.mg-footer__description h2 {
+  margin: 0 0 1.4rem;
+  color: #FAF7F2;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.mg-footer__description p {
+  max-width: 420px;
+  color: #D8CFC6;
+  font-size: .9rem;
+  line-height: 1.9;
+}
+
+.mg-footer__grid {
+  padding-block: 3rem;
+}
+
+.mg-footer__grid h2 {
+  color: #CFB995;
+  font-family: var(--font-body);
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.mg-footer__grid a,
+.mg-footer__grid span {
+  color: #E1DAD2;
+  font-size: .82rem;
+  line-height: 1.8;
+}
+
+.mg-footer__grid a:hover {
+  color: #E4C99F;
+}
+
+.mg-footer__bottom {
+  color: #C5B9AD;
+  font-size: .7rem;
+}
+
+/* Tabletas */
+@media (max-width: 850px) {
+  .mg-footer__lead {
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .mg-footer__brand {
+    width: 180px;
+    height: 180px;
+  }
+
+  .mg-footer__logo {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 580px) {
+  .mg-footer__lead {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .mg-footer__brand {
+    width: 190px;
+    height: 190px;
+  }
+
+  .mg-footer__logo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .mg-footer__description {
+    text-align: center;
+  }
+
+  .mg-footer__description h2 {
+    font-size: 2.9rem;
+  }
+
+  .mg-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .mg-footer__bottom {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mg-footer__brand {
+    transition: none;
+  }
+}
