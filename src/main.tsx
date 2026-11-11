@@ -11,7 +11,7 @@ import './styles/admin.css'
 import './styles/editorial.css'
 import './styles/appointments.css'
 import './styles/booking-calendar.css'
-
+import './styles/luxury-theme.css'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router} />

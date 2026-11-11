@@ -1,36 +1,337 @@
-import { ArrowRight, Asterisk, Leaf } from 'lucide-react'
+
+import {
+  ArrowRight,
+  CalendarDays,
+  Instagram,
+  Leaf,
+  MessageCircle,
+  Sparkles,
+} from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { ProductCard } from '../../components/commerce/ProductCard'
-import { ProductMedia } from '../../components/commerce/ProductMedia'
 import { usePageMeta } from '../../hooks/use-page-meta'
-import { useCatalogStore } from '../../stores/catalog-store'
 import { useStoreConfigStore } from '../../stores/store-config-store'
 
-const concerns = [
-  { name: 'Hidratación', slug: 'hidratacion', number: '01', tone: 'sage' },
-  { name: 'Cuidado capilar', slug: 'cuidado-capilar', number: '02', tone: 'clay' },
-  { name: 'Rutina facial', slug: 'rutina-facial', number: '03', tone: 'mist' },
-  { name: 'Bienestar diario', slug: 'bienestar-diario', number: '04', tone: 'ink' },
-]
-const categories = [
-  { name: 'Facial', slug: 'facial', tone: 'mist' }, { name: 'Capilar', slug: 'capilar', tone: 'clay' },
-  { name: 'Cuerpo', slug: 'cuerpo', tone: 'sand' }, { name: 'Bienestar', slug: 'bienestar', tone: 'sage' },
-  { name: 'Suplementos', slug: 'suplementos', tone: 'ink' },
+const services = [
+  {
+    id: 'capilar',
+    title: 'Cuidado capilar',
+    description:
+      'Tratamientos, recuperación y cuidado personalizado para tu cabello.',
+    image:
+      'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Espacio profesional dedicado al cuidado capilar',
+  },
+  {
+    id: 'facial',
+    title: 'Cuidado facial',
+    description:
+      'Limpieza, hidratación y tratamientos especializados para tu piel.',
+    image:
+      'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Aplicación profesional de tratamiento facial',
+  },
+  {
+    id: 'bienestar',
+    title: 'Estética y bienestar',
+    description:
+      'Experiencias de belleza y bienestar pensadas especialmente para ti.',
+    image:
+      'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=85',
+    alt: 'Ambiente tranquilo de bienestar y cuidado personal',
+  },
 ]
 
 export function HomePage() {
   const config = useStoreConfigStore((state) => state.config)
-  const products = useCatalogStore((state) => state.products)
-  const featured = products.filter((product) => product.featured).slice(0, 4)
-  const news = products.filter((product) => product.isNew).slice(0, 4)
-  usePageMeta()
-  const section = (id: typeof config.home.sections[number]['id']) => config.home.sections.find((item) => item.id === id)?.enabled
-  return <>
-    <section className="hero"><div className="container hero__grid"><div className="hero__copy"><span className="eyebrow">{config.hero.eyebrow}</span><h1>{config.hero.title.split('. ').map((line, index) => <span key={line}>{line}{index === 0 ? '.' : ''}</span>)}</h1><p>{config.hero.description}</p><div className="hero__actions"><Link className="button button--primary" to={config.hero.primaryHref}>{config.hero.primaryLabel}<ArrowRight size={18} /></Link><Link className="text-link" to={config.hero.secondaryHref}>{config.hero.secondaryLabel}<ArrowRight size={15} /></Link></div><small className="sample-label">Experiencia local de demostración</small></div><div className="hero__art" aria-label="Placeholder editorial preparado para fotografía"><div className="hero__shape hero__shape--one" /><div className="hero__shape hero__shape--two" /><span className="hero__vertical">MG / CARE / WELLNESS</span><div className="hero__note"><Leaf aria-hidden="true" /><span>Cuidado elegido<br />con intención</span></div></div></div></section>
-    {section('concerns') && <section className="home-section concerns-section"><div className="container"><div className="editorial-heading"><span className="eyebrow">Navegar por necesidad</span><h2>{config.home.concernsTitle}</h2><p>Cuatro puntos de partida para explorar el catálogo de demostración.</p></div><div className="concern-composition">{concerns.map((item) => <Link className={`concern-tile tone-${item.tone}`} key={item.slug} to={`/catalogo?necesidad=${item.slug}`}><span>{item.number}</span><Asterisk /><strong>{item.name}</strong><i>Explorar →</i></Link>)}</div></div></section>}
-    {section('featured') && <section className="home-section product-section"><div className="container"><div className="section-heading"><div><span className="eyebrow">Curaduría de muestra</span><h2>{config.home.featuredTitle}</h2></div><Link className="text-link" to="/catalogo">Ver todo <ArrowRight size={15} /></Link></div><div className="product-grid">{featured.map((product) => <ProductCard product={product} key={product.id} />)}</div></div></section>}
-    {section('story') && <section className="editorial-story"><div className="editorial-story__media"><ProductMedia image={{ id: 'story', url: '', alt: 'Placeholder para historia editorial MG', sortOrder: 0, placeholderTone: 'ink' }} /></div><div className="editorial-story__copy"><span className="eyebrow">{config.home.story.eyebrow}</span><h2>{config.home.story.title.split('. ').map((line) => <span key={line}>{line}{line.endsWith('.') ? '' : '.'}</span>)}</h2><p>{config.home.story.description}</p><Link className="button button--secondary" to={config.home.story.ctaHref}>{config.home.story.ctaLabel}</Link></div></section>}
-    {section('categories') && <section className="home-section category-section" id="categorias"><div className="container"><div className="editorial-heading"><span className="eyebrow">Explora por categoría</span><h2>Distintas formas de cuidarte.</h2></div><div className="category-composition">{categories.map((item, index) => <Link key={item.slug} className={`category-tile category-tile--${index + 1} tone-${item.tone}`} to={`/catalogo?categoria=${item.slug}`}><span>0{index + 1}</span><strong>{item.name}</strong><i>Descubrir <ArrowRight /></i></Link>)}</div></div></section>}
-    {section('new') && <section className="home-section new-section"><div className="container"><div className="section-heading"><div><span className="eyebrow">Recién incorporado</span><h2>{config.home.newTitle}</h2></div><Link className="text-link" to="/catalogo?orden=nuevo">Explorar novedades <ArrowRight size={15} /></Link></div><div className="new-scroll">{news.map((product) => <ProductCard product={product} key={product.id} />)}</div></div></section>}
-  </>
+
+  usePageMeta(
+    'Belleza, salud y bienestar integral',
+    'Servicios profesionales de belleza y cuidado personal en MG Salud & Belleza.',
+  )
+
+  const instagram = config.social.instagram.trim()
+  const instagramUrl = /^https:\/\/(www\.)?instagram\.com\//i.test(instagram)
+    ? instagram
+    : null
+
+  const whatsappNumber = config.whatsapp.number.replace(/\D/g, '')
+
+  const whatsappReady =
+    config.whatsapp.enabled &&
+    whatsappNumber.length >= 8 &&
+    whatsappNumber.length <= 15
+
+  const whatsappUrl = whatsappReady
+    ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        'Hola, MG Salud & Belleza. Quisiera conocer sus servicios y solicitar una cita.',
+      )}`
+    : null
+
+  return (
+    <div className="mg-home">
+
+      {/* HERO PRINCIPAL */}
+      <section className="mg-hero" aria-labelledby="mg-hero-title">
+        <div
+          className="mg-hero__photo"
+          role="img"
+          aria-label="Fotografía editorial de belleza y cuidado personal"
+        />
+
+        <div className="mg-hero__shade" />
+
+        <div className="container mg-hero__content">
+          <div className="mg-hero__copy">
+            <span className="mg-kicker">
+              CUIDADO · ESTÉTICA · BIENESTAR
+            </span>
+
+            <h1 id="mg-hero-title">
+              Belleza, salud y
+              <br />
+              <em>bienestar integral.</em>
+            </h1>
+
+            <p>
+              Servicios de belleza y productos seleccionados
+              para acompañarte en cada momento de tu cuidado.
+            </p>
+
+            <div className="mg-hero__actions">
+              <Link
+                className="mg-btn mg-btn--primary"
+                to="/citas"
+              >
+                <CalendarDays size={19} />
+                Agenda tu cita
+              </Link>
+
+              <Link
+                className="mg-btn mg-btn--outline"
+                to="/catalogo"
+              >
+                Explorar catálogo
+                <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <a href="#servicios" className="mg-hero__scroll">
+          Descubre MG
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      {/* PRESENTACIÓN */}
+      <section className="mg-intro container">
+        <span className="mg-kicker">
+          TU ESPACIO DE BELLEZA
+        </span>
+
+        <h2>
+          Un momento para ti.
+          <br />
+          <em>Un cuidado que se siente.</em>
+        </h2>
+
+        <p>
+          Creemos en dedicar tiempo a lo que te hace sentir bien.
+          Descubre nuestros servicios y encuentra el cuidado
+          que buscas.
+        </p>
+      </section>
+
+      {/* SERVICIOS */}
+      <section className="mg-services" id="servicios">
+        <div className="container">
+          <div className="mg-section-heading">
+            <div>
+              <span className="mg-kicker">
+                EXPERIENCIAS MG
+              </span>
+              <h2>Nuestros servicios</h2>
+            </div>
+
+            <p>
+              Belleza y bienestar en un espacio pensado
+              para tu cuidado personal.
+            </p>
+          </div>
+
+          <div className="mg-services__grid">
+            {services.map((service, index) => (
+              <article className="mg-service" key={service.id}>
+                <div className="mg-service__media">
+                  <img
+                    src={service.image}
+                    alt={service.alt}
+                    loading="lazy"
+                  />
+
+                  <span className="mg-service__number">
+                    0{index + 1}
+                  </span>
+                </div>
+
+                <div className="mg-service__body">
+                  <div>
+                    <h3>{service.title}</h3>
+                    <p>{service.description}</p>
+                  </div>
+
+                  <Link
+                    className="mg-service__arrow"
+                    to={`/citas?servicio=${service.id}`}
+                    aria-label={`Solicitar cita de ${service.title}`}
+                    title={`Solicitar cita de ${service.title}`}
+                  >
+                    <ArrowRight size={21} />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <Link
+              className="mg-text-link"
+              to="/citas"
+            >
+              Solicitar una cita
+              <ArrowRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* HISTORIA DE MG */}
+      <section className="mg-story" id="nosotros">
+        <div className="mg-story__photo">
+          <img
+            src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1400&q=85"
+            alt="Productos y tratamientos de cuidado personal"
+            loading="lazy"
+          />
+        </div>
+
+        <div className="mg-story__content">
+          <Leaf size={28} strokeWidth={1.3} />
+
+          <span className="mg-kicker">
+            LA ESENCIA DE MG
+          </span>
+
+          <h2>
+            Cuidarte también
+            <br />
+            es una forma de
+            <br />
+            <em>quererte.</em>
+          </h2>
+
+          <p>
+            En MG Salud & Belleza reunimos servicios
+            estéticos y una selección de productos
+            para hacer del cuidado personal una
+            experiencia cercana y especial.
+          </p>
+
+          <Link className="mg-text-link" to="/catalogo">
+            Descubre nuestra selección
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
+      {/* INVITACIÓN AL CATÁLOGO */}
+      <section className="mg-catalog-teaser">
+        <div className="container mg-catalog-teaser__inner">
+          <div className="mg-catalog-teaser__icon">
+            <Sparkles size={30} strokeWidth={1.4} />
+          </div>
+
+          <span className="mg-kicker">
+            NUESTRA SELECCIÓN
+          </span>
+
+          <h2>
+            Belleza que puedes
+            <br />
+            llevar contigo.
+          </h2>
+
+          <p>
+            Explora nuestro catálogo de productos
+            para el cuidado facial, capilar y corporal.
+          </p>
+
+          <Link
+            className="mg-btn mg-btn--primary"
+            to="/catalogo"
+          >
+            Visitar catálogo
+            <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
+
+      {/* CONTACTO Y AGENDAMIENTO */}
+      <section className="mg-contact" id="citas">
+        <div className="container mg-contact__inner">
+          <div>
+            <span className="mg-kicker">
+              ESTAMOS PARA TI
+            </span>
+
+            <h2>
+              Tu próximo momento
+              <br />
+              de cuidado comienza aquí.
+            </h2>
+
+            <p>
+              Cuéntanos qué servicio necesitas y
+              selecciona tu fecha preferida.
+            </p>
+          </div>
+
+          <div className="mg-contact__actions">
+            <Link
+              className="mg-btn mg-btn--light"
+              to="/citas"
+            >
+              <CalendarDays size={20} />
+              Solicitar cita
+            </Link>
+
+            {whatsappUrl && (
+              <a
+                className="mg-social-link"
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle size={18} />
+                Hablar directamente por WhatsApp
+              </a>
+            )}
+
+            {instagramUrl && (
+              <a
+                className="mg-social-link"
+                href={instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={18} />
+                Síguenos en Instagram
+              </a>
+            )}
+          </div>
+        </div>
+      </section>
+
+    </div>
+  )
 }

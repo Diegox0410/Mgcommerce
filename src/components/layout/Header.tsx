@@ -1,33 +1,161 @@
-import { ChevronDown, Heart, Menu, Search, ShoppingBag, UserRound } from 'lucide-react'
-import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import { selectCartCount, useCartStore } from '../../stores/cart-store'
-import { useStoreConfigStore } from '../../stores/store-config-store'
-import { useStorefrontUiStore } from '../../stores/storefront-ui-store'
-import { IconButton } from '../ui/IconButton'
-import { Drawer } from '../ui/Overlays'
 
-const megaGroups = [
-  { label: 'Categorías', links: [['Cuidado facial', '/catalogo?categoria=facial'], ['Cuidado capilar', '/catalogo?categoria=capilar'], ['Cuerpo', '/catalogo?categoria=cuerpo'], ['Bienestar', '/catalogo?categoria=bienestar']] },
-  { label: 'Necesidades', links: [['Hidratación', '/catalogo?necesidad=hidratacion'], ['Rutina facial', '/catalogo?necesidad=rutina-facial'], ['Bienestar diario', '/catalogo?necesidad=bienestar-diario']] },
-  { label: 'Colecciones', links: [['Selección MG', '/catalogo?coleccion=seleccion-mg'], ['Novedades', '/catalogo?coleccion=novedades']] },
-]
+import {
+  CalendarDays,
+  Menu,
+  Search,
+  ShoppingBag,
+} from 'lucide-react'
+import { Link, NavLink } from 'react-router-dom'
+import {
+  selectCartCount,
+  useCartStore,
+} from '../../stores/cart-store'
+import { useStorefrontUiStore } from '../../stores/storefront-ui-store'
+import { Drawer } from '../ui/Overlays'
+import { MGLogo } from '../branding/MGLogo'
 
 export function Header() {
-  const [mega, setMega] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const config = useStoreConfigStore((state) => state.config)
-  const count = useCartStore(selectCartCount)
-  const { openSearch, openCart, mobileNavOpen, setMobileNavOpen } = useStorefrontUiStore()
-  useEffect(() => { const update = () => setScrolled(window.scrollY > 16); update(); window.addEventListener('scroll', update, { passive: true }); return () => window.removeEventListener('scroll', update) }, [])
-  useEffect(() => {
-    if (!mega) return
-    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') setMega(false) }
-    window.addEventListener('keydown', closeOnEscape)
-    return () => window.removeEventListener('keydown', closeOnEscape)
-  }, [mega])
-  return <>
-    <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}><div className="container header__inner"><IconButton className="header__mobile" aria-label="Abrir menú" onClick={() => setMobileNavOpen(true)}><Menu /></IconButton><Link className="wordmark" to="/" aria-label="MG Salud y Belleza, inicio"><span>MG</span><small>Salud & Belleza</small></Link><nav className="header__nav" aria-label="Navegación principal">{config.header.navigation.filter((item) => item.enabled).map((item) => item.kind === 'mega' ? <button key={item.id} aria-expanded={mega} aria-controls="mega-menu" onMouseEnter={() => setMega(true)} onFocus={() => setMega(true)} onClick={() => setMega(true)}>{item.label}<ChevronDown size={13} /></button> : <NavLink key={item.id} to={item.href} onClick={() => setMega(false)}>{item.label}</NavLink>)}</nav><div className="header__actions"><IconButton aria-label="Buscar" onClick={openSearch}><Search /></IconButton><IconButton className="desktop-action" aria-label="Cuenta próximamente" title="Cuenta próximamente" disabled><UserRound /></IconButton><IconButton className="desktop-action" aria-label="Wishlist próximamente" title="Wishlist próximamente" disabled><Heart /></IconButton><button className="cart-link" onClick={openCart} aria-label={`Carrito, ${count} artículos`}><ShoppingBag /><span>{count}</span></button></div></div>{mega && <div id="mega-menu" className="mega-menu"><div className="container mega-menu__inner">{megaGroups.map((group) => <div key={group.label}><span>{group.label}</span>{group.links.map(([label, href]) => <Link key={href} to={href} onClick={() => setMega(false)}>{label}</Link>)}</div>)}<Link className="mega-menu__feature" to="/catalogo?coleccion=seleccion-mg" onClick={() => setMega(false)}><span className="eyebrow">Selección editorial</span><strong>Descubre la mirada MG.</strong><i>Explorar ahora →</i></Link></div></div>}</header>
-    <Drawer open={mobileNavOpen} title="Explorar MG" onClose={() => setMobileNavOpen(false)}><div className="mobile-nav"><button className="mobile-nav__search" onClick={() => { setMobileNavOpen(false); openSearch() }}><Search /> Buscar productos</button>{megaGroups.map((group) => <section key={group.label}><h3>{group.label}</h3>{group.links.map(([label, href]) => <Link key={href} to={href} onClick={() => setMobileNavOpen(false)}>{label}<span>→</span></Link>)}</section>)}<div className="mobile-nav__future"><button disabled><UserRound /> Cuenta <small>Próximamente</small></button><button disabled><Heart /> Wishlist <small>Próximamente</small></button></div></div></Drawer>
-  </>
+  const cartCount = useCartStore(selectCartCount)
+
+  const {
+    openSearch,
+    openCart,
+    mobileNavOpen,
+    setMobileNavOpen,
+  } = useStorefrontUiStore()
+
+  const closeMenu = () => setMobileNavOpen(false)
+
+  return (
+    <>
+      <header className="site-header mg-header">
+        <div className="container mg-header__inner">
+
+          <button
+            type="button"
+            className="mg-header__menu"
+            aria-label="Abrir menú"
+            onClick={() => setMobileNavOpen(true)}
+          >
+            <Menu size={25} />
+          </button>
+
+        <Link
+  to="/"
+  className="mg-header__brand mg-header__brand--vector"
+  aria-label="MG Salud y Belleza, inicio"
+>
+  <MGLogo className="mg-header__vector-logo" size={92} />
+</Link>
+          <nav
+            className="mg-header__nav"
+            aria-label="Navegación principal"
+          >
+            <NavLink to="/" end>
+              Inicio
+            </NavLink>
+
+            <a href="/#servicios">
+              Servicios
+            </a>
+
+            <NavLink to="/catalogo">
+              Catálogo
+            </NavLink>
+
+            <a href="/#nosotros">
+              Sobre MG
+            </a>
+          </nav>
+
+          <div className="mg-header__actions">
+            <button
+              type="button"
+              className="mg-header__icon"
+              aria-label="Buscar productos"
+              onClick={openSearch}
+            >
+              <Search size={23} strokeWidth={1.8} />
+            </button>
+
+            <button
+              type="button"
+              className="mg-header__icon mg-header__cart"
+              aria-label={`Abrir carrito, ${cartCount} artículos`}
+              onClick={openCart}
+            >
+              <ShoppingBag size={23} strokeWidth={1.8} />
+
+              {cartCount > 0 && (
+                <span>{cartCount}</span>
+              )}
+            </button>
+
+            <Link
+              className="mg-header__contact"
+              to="/citas"
+            >
+              <CalendarDays size={18} />
+              Agendar cita
+            </Link>
+          </div>
+        </div>
+      </header>
+
+      {/* NAVEGACIÓN MÓVIL */}
+      <Drawer
+        open={mobileNavOpen}
+        title="Explorar MG"
+        onClose={closeMenu}
+      >
+        <nav
+          className="mg-mobile-nav"
+          aria-label="Navegación móvil"
+        >
+          <Link to="/" onClick={closeMenu}>
+            Inicio
+          </Link>
+
+          <a href="/#servicios" onClick={closeMenu}>
+            Servicios
+          </a>
+
+          <Link to="/catalogo" onClick={closeMenu}>
+            Catálogo
+          </Link>
+
+          <a href="/#nosotros" onClick={closeMenu}>
+            Sobre MG
+          </a>
+
+          <Link to="/citas" onClick={closeMenu}>
+            <CalendarDays size={20} />
+            Agendar cita
+          </Link>
+
+          <button
+            type="button"
+            onClick={() => {
+              closeMenu()
+              openSearch()
+            }}
+          >
+            <Search size={20} />
+            Buscar productos
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              closeMenu()
+              openCart()
+            }}
+          >
+            <ShoppingBag size={20} />
+            Ver carrito ({cartCount})
+          </button>
+        </nav>
+      </Drawer>
+    </>
+  )
 }
