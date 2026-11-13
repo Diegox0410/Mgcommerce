@@ -13,7 +13,6 @@ import {
 } from 'lucide-react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { usePageMeta } from '../../hooks/use-page-meta'
-import { useStoreConfigStore } from '../../stores/store-config-store'
 import {
   bookingConfig,
   dateKey,
@@ -32,11 +31,7 @@ export function AppointmentPage() {
     (item) => item.id === requestedService,
   )
 
-  const whatsapp = useStoreConfigStore(
-    (state) => state.config.whatsapp,
-  )
-
-  const [service, setService] = useState(
+const [service, setService] = useState(
     validService ? requestedService : '',
   )
   const [monthOffset, setMonthOffset] = useState(0)
@@ -104,12 +99,8 @@ export function AppointmentPage() {
     (item) => item.id === service,
   )
 
-  const whatsappNumber = whatsapp.number.replace(/\D/g, '')
-
-  const whatsappReady =
-    whatsapp.enabled &&
-    whatsappNumber.length >= 8 &&
-    whatsappNumber.length <= 15
+  const whatsappNumber = '593988844851'
+  const whatsappReady = /^\d{8,15}$/.test(whatsappNumber)
 
   const isPastTime = (time: string) =>
     selectedDate === now.date && time <= now.time
