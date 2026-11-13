@@ -1,3 +1,4 @@
+import { MgInquiryProductPage } from './MgInquiryProductPage'
 import { ArrowRight, Check, Heart, Minus } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
@@ -30,6 +31,7 @@ export function ProductPage() {
   const regularPrice = variant?.regularPrice ?? product?.regularPrice ?? null
   const related = product ? relatedProducts(product, products) : []
   usePageMeta(product?.seo.title ?? product?.name, product?.seo.description ?? product?.shortDescription)
+  if (product?.images[0]?.url.startsWith('/catalogo-mg/')) return <MgInquiryProductPage product={product} />
   if (status === 'loading' || status === 'idle') return <section className="product-page container"><div className="product-loading"><Skeleton /><div><Skeleton /><Skeleton /><Skeleton /></div></div></section>
   if (!product) return <section className="page container"><EmptyState title="Producto no disponible" description="Este enlace no corresponde a un producto publicado. Puedes volver al catálogo." /><Link className="button button--primary empty-action" to="/catalogo">Volver al catálogo</Link></section>
   const addToCart = () => {

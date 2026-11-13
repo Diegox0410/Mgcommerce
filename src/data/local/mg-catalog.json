@@ -1,0 +1,2522 @@
+[
+  {
+    "code": "MG-0001",
+    "name": "Aceite de coco Cocosol Extra Virgen",
+    "brand": "Herbalmax",
+    "presentation": "275 ml",
+    "category": "Aceites y alimentos",
+    "cover": "/catalogo-mg/MG-0001.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0002",
+    "name": "Crema de masaje corporal Anti-Stress Body Massage Cream",
+    "brand": "Professional Spa",
+    "presentation": "500 ml",
+    "category": "Masaje corporal",
+    "cover": "/catalogo-mg/MG-0002.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0003",
+    "name": "Aceite de masaje corporal Sensual Body Massage Oil",
+    "brand": "Professional Spa",
+    "presentation": "200 ml",
+    "category": "Masaje corporal",
+    "cover": "/catalogo-mg/MG-0003.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0004",
+    "name": "Sérum hidratante de ácido hialurónico nanosomado",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0004.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0005",
+    "name": "Sérum hidratante de ácido hialurónico nanosomado",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0005.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0006",
+    "name": "Acondicionador con romero sin sal",
+    "brand": "MG",
+    "presentation": "500 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0006.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0007",
+    "name": "Acondicionador con romero sin sal",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0007.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0008",
+    "name": "ADN",
+    "brand": "Imagcev",
+    "presentation": "60 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0008.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0009",
+    "name": "Mascarilla Anti-Stain Depigmenting",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0009.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0010",
+    "name": "Spray capilar Anti-Caspa Loción",
+    "brand": "MG",
+    "presentation": "",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0010.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0011",
+    "name": "Ácido azelaico despigmentante pH 4,5 5%",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0011.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0012",
+    "name": "Ácido fólico (vitamina B9)",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0012.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0013",
+    "name": "Bálsamo descongestivo",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0013.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0014",
+    "name": "Bálsamo descongestivo",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0014.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0015",
+    "name": "Greens & Superfoods Original",
+    "brand": "Bloom",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0015.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0016",
+    "name": "Greens & Superfoods Berry",
+    "brand": "Bloom",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0016.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0017",
+    "name": "Greens & Superfoods Citrus",
+    "brand": "Bloom",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0017.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0018",
+    "name": "Glucosamine + Colágeno + Cartílago de tiburón",
+    "brand": "",
+    "presentation": "100 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0018.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0019",
+    "name": "Fusión CLM Células madre",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0019.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0020",
+    "name": "Fusión CLM Células madre",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0020.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0021",
+    "name": "Gel de colágeno con ácido hialurónico + ceramidas",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0021.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0022",
+    "name": "Gel de colágeno con ácido hialurónico + ceramidas",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0022.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0023",
+    "name": "Contorno de ojos",
+    "brand": "Imagcev",
+    "presentation": "",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0023.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0024",
+    "name": "Eterna Juventud",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0024.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0025",
+    "name": "Eterna Juventud",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0025.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0026",
+    "name": "Crema de colágeno",
+    "brand": "Imagcev",
+    "presentation": "Frasco con bomba; etiqueta azul oscuro",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0026.webp",
+    "note": "Confirmar fórmula, denominación completa y contenido neto; texto secundario deformado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0027",
+    "name": "Crema de colágeno",
+    "brand": "Imagcev",
+    "presentation": "Frasco con bomba; etiqueta fucsia",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0027.webp",
+    "note": "Confirmar fórmula, denominación completa y contenido neto; texto secundario deformado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0028",
+    "name": "Crema de colágeno",
+    "brand": "Imagcev",
+    "presentation": "Frasco con bomba; etiqueta naranja",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0028.webp",
+    "note": "Confirmar fórmula, denominación completa y contenido neto; texto secundario deformado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0029",
+    "name": "Crema de colágeno",
+    "brand": "Imagcev",
+    "presentation": "Frasco con bomba; etiqueta turquesa",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0029.webp",
+    "note": "Confirmar fórmula, denominación completa y contenido neto; texto secundario deformado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0030",
+    "name": "Crema de colágeno más ácido hialurónico y vitamina E",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0030.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0031",
+    "name": "Crema de colágeno más ácido hialurónico y vitamina E",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0031.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0032",
+    "name": "Crema de malva",
+    "brand": "",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0032.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0033",
+    "name": "Crema de malva",
+    "brand": "",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0033.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0034",
+    "name": "Vitamina K",
+    "brand": "Imagcev",
+    "presentation": "130 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0034.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0035",
+    "name": "Vitamina K",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0035.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0036",
+    "name": "Retinol",
+    "brand": "",
+    "presentation": "10 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0036.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0037",
+    "name": "Rosácea Relief",
+    "brand": "",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0037.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0038",
+    "name": "Solución despigmentante",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0038.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0039",
+    "name": "Solución despigmentante",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0039.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0040",
+    "name": "Vitamina D3 Línea Premium",
+    "brand": "Natural Factors",
+    "presentation": "100 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0040.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0041",
+    "name": "Diabetes Colesterol Presión",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0041.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0042",
+    "name": "Shampoo con romero sin sal",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0042.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0043",
+    "name": "Espuma limpiadora",
+    "brand": "Imagcev",
+    "presentation": "100 ml; etiqueta rosa",
+    "category": "Limpieza facial",
+    "cover": "/catalogo-mg/MG-0043.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0044",
+    "name": "Espuma limpiadora",
+    "brand": "Imagcev",
+    "presentation": "200 ml; etiqueta rosa",
+    "category": "Limpieza facial",
+    "cover": "/catalogo-mg/MG-0044.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0045",
+    "name": "Espuma limpiadora",
+    "brand": "Imagcev",
+    "presentation": "200 ml; etiqueta azul",
+    "category": "Limpieza facial",
+    "cover": "/catalogo-mg/MG-0045.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0046",
+    "name": "Espuma limpiadora",
+    "brand": "Imagcev",
+    "presentation": "100 ml; etiqueta azul",
+    "category": "Limpieza facial",
+    "cover": "/catalogo-mg/MG-0046.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0047",
+    "name": "Neo Body Scrub Crema exfoliante para manos y cuerpo",
+    "brand": "",
+    "presentation": "",
+    "category": "Exfoliantes",
+    "cover": "/catalogo-mg/MG-0047.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0048",
+    "name": "Ácido hidroxicinámicos",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0048.webp",
+    "note": "Confirmar denominación completa y concentración de la etiqueta.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0049",
+    "name": "Ácido hidroxicinámicos",
+    "brand": "Imagcev",
+    "presentation": "30 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0049.webp",
+    "note": "Confirmar denominación completa y concentración de la etiqueta.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0050",
+    "name": "Fitina",
+    "brand": "",
+    "presentation": "1 litro (1.000 ml)",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0050.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0051",
+    "name": "Gel de malva",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0051.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0052",
+    "name": "Gel de malva",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0052.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0053",
+    "name": "Eterna Juventud",
+    "brand": "Imagcev",
+    "presentation": "120 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0053.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0054",
+    "name": "Eterna Juventud",
+    "brand": "Imagcev",
+    "presentation": "70 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0054.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0055",
+    "name": "Solución despigmentante",
+    "brand": "Imagcev",
+    "presentation": "120 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0055.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0056",
+    "name": "Solución despigmentante",
+    "brand": "Imagcev",
+    "presentation": "70 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0056.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0057",
+    "name": "Gel de ácido tranexámico 3%",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0057.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0058",
+    "name": "Gel de ácido tranexámico 3%",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0058.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0059",
+    "name": "Vitamina B",
+    "brand": "Imagcev",
+    "presentation": "200 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0059.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0060",
+    "name": "Vitamina B",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0060.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0061",
+    "name": "Vitamina B",
+    "brand": "Imagcev",
+    "presentation": "120 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0061.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0062",
+    "name": "Vitamina K",
+    "brand": "Imagcev",
+    "presentation": "120 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0062.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0063",
+    "name": "Vitamina K",
+    "brand": "Imagcev",
+    "presentation": "70 g; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0063.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0064",
+    "name": "Hair Regenerator Regenerador capilar",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0064.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0065",
+    "name": "Centella Asiática y Spirulina",
+    "brand": "Labmac",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0065.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0066",
+    "name": "Berberine 500 mg",
+    "brand": "",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0066.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0067",
+    "name": "Magnesium Complex 6 Elemental Magnesium",
+    "brand": "Toplux Nutrition",
+    "presentation": "60 cápsulas; 1000 mg",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0067.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0068",
+    "name": "Soursop Graviola 1000 mg per serving",
+    "brand": "",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0068.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0070",
+    "name": "Levadura de cerveza Brewer's Yeast",
+    "brand": "Ecuanatu",
+    "presentation": "100 tabletas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0070.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0071",
+    "name": "Citrato de Magnesio",
+    "brand": "Labmac",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0071.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0072",
+    "name": "Pro-Keratin Pro-Queratina Thermal Kera Plus",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0072.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0073",
+    "name": "Multivita Kids",
+    "brand": "Mönverd",
+    "presentation": "Bolsa grande",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0073.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0074",
+    "name": "Multivita Kids",
+    "brand": "Mönverd",
+    "presentation": "Bolsa pequeña",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0074.webp",
+    "note": "Contenido neto por confirmar. El envase está parcialmente oculto por otros productos en la fotografía original; no se reconstruye la parte oculta.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0075",
+    "name": "Multivita Kids",
+    "brand": "Mönverd",
+    "presentation": "Frasco",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0075.webp",
+    "note": "Contenido neto y tamaño comercial de esta presentación por confirmar; se mantiene el código separado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0076",
+    "name": "Multivita Kids",
+    "brand": "Mönverd",
+    "presentation": "Frasco",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0076.webp",
+    "note": "Contenido neto y tamaño comercial de esta presentación por confirmar; se mantiene el código separado.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0077",
+    "name": "Argan Oil",
+    "brand": "MG",
+    "presentation": "30 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0077.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0078",
+    "name": "FLO Ovarian Support",
+    "brand": "O Positiv Health",
+    "presentation": "Cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0078.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0079",
+    "name": "Triple Omega 3-6-9 + Vitamina E natural",
+    "brand": "Herbalmax",
+    "presentation": "60 softgels; 140 g",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0079.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0080",
+    "name": "URO Vaginal Probiotic",
+    "brand": "O Positiv Health",
+    "presentation": "60 cápsulas veganas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0080.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0081",
+    "name": "Creatine Monohydrate",
+    "brand": "",
+    "presentation": "Tarro blanco",
+    "category": "Suplementos deportivos",
+    "cover": "/catalogo-mg/MG-0081.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0082",
+    "name": "Mascarilla anti frizz Biotina y Romero",
+    "brand": "MG",
+    "presentation": "300 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0082.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0083",
+    "name": "Células Madres Nutritive Mask",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0083.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0084",
+    "name": "Ácido hialurónico Serum",
+    "brand": "",
+    "presentation": "30 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0084.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0085",
+    "name": "Creatine Monohydrate",
+    "brand": "",
+    "presentation": "Tarro negro y blanco",
+    "category": "Suplementos deportivos",
+    "cover": "/catalogo-mg/MG-0085.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0086",
+    "name": "Multivitaminas",
+    "brand": "",
+    "presentation": "Frasco",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0086.webp",
+    "note": "Confirmar marca y contenido neto. Los otros envases de la escena no se incorporan como variantes confirmadas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0087",
+    "name": "Neo-Pil Ampolla Semillas de Lino con ácido hialurónico",
+    "brand": "Cardy",
+    "presentation": "",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0087.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0088",
+    "name": "Tone Girl New Eternity For Body",
+    "brand": "",
+    "presentation": "Caja con 10 viales x 10 ml",
+    "category": "Cuidado corporal",
+    "cover": "/catalogo-mg/MG-0088.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0089",
+    "name": "Ashwagandha",
+    "brand": "",
+    "presentation": "60 cápsulas veganas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0089.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0090",
+    "name": "Meno Vaginal Moisture Support Capsules",
+    "brand": "O Positiv Health",
+    "presentation": "60 cápsulas veganas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0090.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0092",
+    "name": "BBL Gomitas",
+    "brand": "",
+    "presentation": "130 gomitas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0092.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0093",
+    "name": "LBS II Cápsulas",
+    "brand": "Nature's Sunshine",
+    "presentation": "30 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0093.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0094",
+    "name": "Aguaje Hinojo Maca Triple",
+    "brand": "Natural Medix",
+    "presentation": "100 cápsulas; 500 mg",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0094.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0095",
+    "name": "Aguaje Plus 4 en 1",
+    "brand": "Natural Medix",
+    "presentation": "100 cápsulas; 500 mg",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0095.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0096",
+    "name": "Shampoo sin sal",
+    "brand": "MG",
+    "presentation": "300 ml; etiqueta floral",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0096.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0097",
+    "name": "Botox Tratamiento",
+    "brand": "",
+    "presentation": "Frasco con tapa dorada",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0097.webp",
+    "note": "Marca y contenido neto por confirmar; parte de la etiqueta queda en el lateral.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0098",
+    "name": "LipoMed",
+    "brand": "Elena",
+    "presentation": "Caja con viales",
+    "category": "Tratamientos profesionales",
+    "cover": "/catalogo-mg/MG-0098.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0099",
+    "name": "Advanced Hair Growth",
+    "brand": "Rainbow Nutrients",
+    "presentation": "120 cápsulas; 60 day supply",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0099.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0100",
+    "name": "Burdock",
+    "brand": "Nature's Sunshine",
+    "presentation": "100 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0100.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0101",
+    "name": "Krec'UP L-Arginine y Zinc",
+    "brand": "American Natural",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0101.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0102",
+    "name": "Citrato de magnesio Línea Premium",
+    "brand": "",
+    "presentation": "Bolsa plateada y verde",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0102.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0103",
+    "name": "Células madre Stem Cell",
+    "brand": "Biovera",
+    "presentation": "100 g",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0103.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0104",
+    "name": "Adelgazante Natural 100% Lipo-Reductor",
+    "brand": "",
+    "presentation": "Frasco blanco",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0104.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0105",
+    "name": "Adelgazante Natural",
+    "brand": "",
+    "presentation": "Frasco dorado",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0105.webp",
+    "note": "Marca por confirmar. Confirmar fabricante, grafía del texto secundario y cantidad de cápsulas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0106",
+    "name": "Tónico capilar Anti-Caída Desestresante Vitamina E",
+    "brand": "MG",
+    "presentation": "120 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0106.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0107",
+    "name": "Advanced Hair Growth",
+    "brand": "",
+    "presentation": "60 gomitas; 30 day supply",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0107.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0108",
+    "name": "Natural Herbs",
+    "brand": "Elhoe",
+    "presentation": "100 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0108.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0109",
+    "name": "Colágeno Anti Age Revitaliza y Reestructura",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0109.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0110",
+    "name": "Shampoo Anti-Caspa",
+    "brand": "MG",
+    "presentation": "300 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0110.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0111",
+    "name": "American Fit",
+    "brand": "American Natural",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0111.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0112",
+    "name": "Chupa Panza Quema Grasa 15 en 1",
+    "brand": "Natural Medix",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0112.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0113",
+    "name": "Selenium 50 mcg",
+    "brand": "Only Natural",
+    "presentation": "100 tabletas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0113.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0114",
+    "name": "Creatine Monohydrate",
+    "brand": "",
+    "presentation": "500 g; sin sabor",
+    "category": "Suplementos deportivos",
+    "cover": "/catalogo-mg/MG-0114.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0115",
+    "name": "Tónico facial anti-imperfecciones",
+    "brand": "",
+    "presentation": "",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0115.webp",
+    "note": "Confirmar marca completa y volumen.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0116",
+    "name": "Neo-Pil Reestructurante",
+    "brand": "",
+    "presentation": "",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0116.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0117",
+    "name": "Vitamina C2000",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0117.webp",
+    "note": "Confirmar marca, contenido neto y forma de presentación.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0118",
+    "name": "Miel & Avena Crema hidratante",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0118.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0119",
+    "name": "Clorofila Detox",
+    "brand": "",
+    "presentation": "250 ml",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0119.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0120",
+    "name": "Unicorn Fruit After Shave Serum",
+    "brand": "Truly",
+    "presentation": "90 ml",
+    "category": "Cuidado corporal",
+    "cover": "/catalogo-mg/MG-0120.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0121",
+    "name": "URO Green Detox",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0121.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0122",
+    "name": "Lipofast Plus Polvo",
+    "brand": "",
+    "presentation": "Caja con 30 sachets",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0122.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0123",
+    "name": "Soft Serve After Shave Oil",
+    "brand": "Truly",
+    "presentation": "90 ml",
+    "category": "Cuidado corporal",
+    "cover": "/catalogo-mg/MG-0123.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0124",
+    "name": "After Shave Oil",
+    "brand": "",
+    "presentation": "90 ml",
+    "category": "Cuidado corporal",
+    "cover": "/catalogo-mg/MG-0124.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0125",
+    "name": "Black Walnut",
+    "brand": "Nature's Sunshine",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0125.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0126",
+    "name": "Lipofast Plus Polvo",
+    "brand": "Phyto Pharma",
+    "presentation": "Sachet de 5 g",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0126.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0128",
+    "name": "Liver Cleanse & Detox",
+    "brand": "Sandhu's Nutrition",
+    "presentation": "60 cápsulas veganas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0128.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0129",
+    "name": "Sanhepto Liver Cleanse & Detox",
+    "brand": "Sandhu's Nutrition",
+    "presentation": "Caja",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0129.webp",
+    "note": "Portada de la caja. Confirmar correspondencia y contenido del conjunto antes de comercializar.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0130",
+    "name": "Vitamin E400 IU",
+    "brand": "Herbalmax",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0130.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0131",
+    "name": "Biotin",
+    "brand": "Herbalmax",
+    "presentation": "Frasco",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0131.webp",
+    "note": "Confirmar dosis y unidad de la etiqueta.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0132",
+    "name": "Choco Lágeno",
+    "brand": "",
+    "presentation": "Tarro",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0132.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0133",
+    "name": "Limpieza China",
+    "brand": "Nature's Sunshine",
+    "presentation": "Kit de 4 frascos",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0133.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0135",
+    "name": "Gomitas Vinagre de manzana con Garcinia Cambogia",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0135.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0137",
+    "name": "Aceite esencial Romero y Menta Oil Repair",
+    "brand": "MG",
+    "presentation": "30 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0137.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0138",
+    "name": "Gomitas Omega 3",
+    "brand": "",
+    "presentation": "Frasco de gomitas",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0138.webp",
+    "note": "Confirmar marca, fórmula exacta y cantidad de gomitas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0139",
+    "name": "Enfermedades hepáticas Alcachofa",
+    "brand": "Natural Factors",
+    "presentation": "100 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0139.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0140",
+    "name": "Messopepton Biotin",
+    "brand": "",
+    "presentation": "5 viales x 10 ml",
+    "category": "Tratamientos profesionales",
+    "cover": "/catalogo-mg/MG-0140.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0141",
+    "name": "Moisturizing Essential Oil Aceite esencial hidratante",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas x 13 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0141.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0142",
+    "name": "Candida Cleanse",
+    "brand": "Pure Peak",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0142.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0143",
+    "name": "Mega-acondicionador con aloe vera",
+    "brand": "Salerm Cosmetics",
+    "presentation": "Caja y ampolla",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0143.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0145",
+    "name": "Cranberry Max 750 mg",
+    "brand": "Herbalmax",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0145.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0147",
+    "name": "Yerba Magic Peach Mango",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0147.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0148",
+    "name": "Liposomal Vitamin C Enhanced Absorption",
+    "brand": "Toplux Nutrition",
+    "presentation": "90 cápsulas; 2100 mg",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0148.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0149",
+    "name": "Aceite de orégano",
+    "brand": "",
+    "presentation": "100 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0149.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0151",
+    "name": "Deos Body Deodorizing Supplement",
+    "brand": "Deos",
+    "presentation": "30 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0151.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0152",
+    "name": "Myo and D-Chiro Inositol",
+    "brand": "",
+    "presentation": "120 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0152.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0153",
+    "name": "Shampoo matizante",
+    "brand": "MG",
+    "presentation": "300 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0153.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0154",
+    "name": "Shampoo sin sal",
+    "brand": "MG",
+    "presentation": "300 ml; etiqueta naranja",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0154.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0155",
+    "name": "Renöva+",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0155.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0156",
+    "name": "Triple Omega-3 1400 mg",
+    "brand": "Herbalmax",
+    "presentation": "Frasco; etiqueta oscura",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0156.webp",
+    "note": "Cantidad y peso neto por confirmar. El lateral izquierdo queda oculto por el frasco vecino en el original; variante mantenida separada.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0157",
+    "name": "Triple Omega-3 1400 mg",
+    "brand": "Herbalmax",
+    "presentation": "Frasco; etiqueta clara",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0157.webp",
+    "note": "Confirmar cantidad y peso neto; variante mantenida separada.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0159",
+    "name": "Glucosamina Cartilage & Joint Flexibility",
+    "brand": "American Natural",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0159.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0161",
+    "name": "Adelgazante Natural 360 Gold",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0161.webp",
+    "note": "Presentación y contenido neto por confirmar. Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0162",
+    "name": "Termo Protector Planchado y Cepillado",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0162.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0163",
+    "name": "Biotina",
+    "brand": "Living Natural",
+    "presentation": "Frasco de cápsulas blandas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0163.webp",
+    "note": "Confirmar dosis, unidad y cantidad de cápsulas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0164",
+    "name": "Multi Collagen Peptides Unflavored",
+    "brand": "Micro Ingredients",
+    "presentation": "454 g (1 lb)",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0164.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0165",
+    "name": "URO Collagen Probiotic",
+    "brand": "",
+    "presentation": "Tarro rojo",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0165.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0166",
+    "name": "Kera-plus con keratina reparadora",
+    "brand": "Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas x 10 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0166.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0167",
+    "name": "Placenta vegetal",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0167.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0168",
+    "name": "Salermvital Vitaminizado",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas; líquido transparente",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0168.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0169",
+    "name": "Salermvital Vitaminizado",
+    "brand": "Hairlab Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas; líquido azul",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0169.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0170",
+    "name": "Kera-liss con queratina termo-activable",
+    "brand": "Salerm Cosmetics",
+    "presentation": "Caja con ampollas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0170.webp",
+    "note": "Confirmar contenido por ampolla.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0171",
+    "name": "Supercalm Calming Drink Mix",
+    "brand": "Nello",
+    "presentation": "Bolsa con sobres",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0171.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0172",
+    "name": "Acondicionador con romero sin sal con extracto de jengibre",
+    "brand": "MG",
+    "presentation": "250 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0172.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0173",
+    "name": "Shampoo con romero sin sal",
+    "brand": "MG",
+    "presentation": "300 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0173.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0174",
+    "name": "Crema depilatoria suaviza e hidrata",
+    "brand": "Lampiña",
+    "presentation": "120 g; bolsa con tapa",
+    "category": "Depilación",
+    "cover": "/catalogo-mg/MG-0174.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0175",
+    "name": "Crema depilatoria suaviza e hidrata",
+    "brand": "Lampiña",
+    "presentation": "30 g; sachet",
+    "category": "Depilación",
+    "cover": "/catalogo-mg/MG-0175.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0176",
+    "name": "Resveratrol Ultra Fortaleza",
+    "brand": "",
+    "presentation": "Frasco",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0176.webp",
+    "note": "Confirmar marca, dosis y cantidad de cápsulas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0177",
+    "name": "URO Intimate Deodorant",
+    "brand": "O Positiv Health",
+    "presentation": "85 g (3 oz)",
+    "category": "Higiene corporal",
+    "cover": "/catalogo-mg/MG-0177.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0178",
+    "name": "Vibazina 25 mg Buclizina HCl",
+    "brand": "Pfizer",
+    "presentation": "40 tabletas",
+    "category": "Medicamentos",
+    "cover": "/catalogo-mg/MG-0178.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0179",
+    "name": "Citrato de magnesio Línea Premium",
+    "brand": "",
+    "presentation": "Tarro",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0179.webp",
+    "note": "Confirmar marca y contenido neto.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0180",
+    "name": "Multi Collagen Peptides Complex",
+    "brand": "Micro Ingredients",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0180.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0181",
+    "name": "100% Whey Protein",
+    "brand": "",
+    "presentation": "Tarro",
+    "category": "Suplementos deportivos",
+    "cover": "/catalogo-mg/MG-0181.webp",
+    "note": "Confirmar marca, contenido neto y denominación del sabor.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0182",
+    "name": "Colágeno hidrolizado + Glucosamina con Omega",
+    "brand": "",
+    "presentation": "700 g",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0182.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0183",
+    "name": "Crema Facial Mujer",
+    "brand": "Lampiña",
+    "presentation": "15 g; bolsa con tapa",
+    "category": "Depilación",
+    "cover": "/catalogo-mg/MG-0183.webp",
+    "note": "Confirmar denominación completa de la etiqueta.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0184",
+    "name": "Conditioning Lotion with silk protein",
+    "brand": "Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas x 13 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0184.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0185",
+    "name": "Multivita Kids",
+    "brand": "",
+    "presentation": "Frasco; tabletas",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0185.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0186",
+    "name": "NAD+ Resveratrol Ultra Strength",
+    "brand": "",
+    "presentation": "Frasco",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0186.webp",
+    "note": "Confirmar marca, dosis y cantidad por envase.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0187",
+    "name": "OXYS Crema nutritiva de arroz",
+    "brand": "",
+    "presentation": "50 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0187.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0188",
+    "name": "Neo-Pil Placenta",
+    "brand": "",
+    "presentation": "Caja y ampollas amarillas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0188.webp",
+    "note": "Confirmar marca, cantidad y contenido de las ampollas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0189",
+    "name": "Gomitas Vitaminas",
+    "brand": "",
+    "presentation": "Frasco de gomitas",
+    "category": "Suplementos infantiles",
+    "cover": "/catalogo-mg/MG-0189.webp",
+    "note": "Confirmar marca, lista de vitaminas y cantidad de gomitas.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0190",
+    "name": "Oil of Oregano with Black Seed Oil",
+    "brand": "Micro Ingredients",
+    "presentation": "90 softgels",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0190.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0191",
+    "name": "Argan Oil",
+    "brand": "MG",
+    "presentation": "",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0191.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0192",
+    "name": "Liquid Chlorophyll Clorofila Líquida",
+    "brand": "Nature's Sunshine",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0192.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0194",
+    "name": "Psyllium Hulls",
+    "brand": "Nature's Sunshine",
+    "presentation": "30 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0194.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0195",
+    "name": "Jugo Verde Detox",
+    "brand": "Jardín Peruano",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0195.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0196",
+    "name": "Pantalla completa en gel SPF 50",
+    "brand": "Natural Center",
+    "presentation": "40 g; tubo",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0196.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0197",
+    "name": "Pantalla completa SPF 50",
+    "brand": "Natural Center",
+    "presentation": "Botella; 200 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0197.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0198",
+    "name": "URO Probiotic Vaginal Probiotic",
+    "brand": "",
+    "presentation": "Botella rosa",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0198.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0199",
+    "name": "Essential Conditioning Oil Aceite esencial acondicionador",
+    "brand": "Salerm Cosmetics",
+    "presentation": "Caja con 4 ampollas",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0199.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0200",
+    "name": "Blood Sugar Complex 20 Active Ingredients",
+    "brand": "Toplux Nutrition",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0200.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0201",
+    "name": "Botox Hialuronic",
+    "brand": "MG",
+    "presentation": "",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0201.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0202",
+    "name": "Folic Acid 800 mcg",
+    "brand": "Mason Natural",
+    "presentation": "100 tabletas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0202.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0203",
+    "name": "Folic Acid 400 mg",
+    "brand": "Only Natural",
+    "presentation": "250 tabletas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0203.webp",
+    "note": "Confirmar la unidad de dosis impresa en la etiqueta; se mantiene la transcripción sin convertirla.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0204",
+    "name": "Shampoo sin sal",
+    "brand": "MG",
+    "presentation": "500 ml; etiqueta floral",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0204.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0205",
+    "name": "Biotina y Vitamina C",
+    "brand": "VitaHealth",
+    "presentation": "60 cápsulas; 32,4 g",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0205.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0206",
+    "name": "Liposomal Glutathione",
+    "brand": "",
+    "presentation": "60 softgels",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0206.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0207",
+    "name": "Messopepton Biotin",
+    "brand": "",
+    "presentation": "Vial individual",
+    "category": "Tratamientos profesionales",
+    "cover": "/catalogo-mg/MG-0207.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0208",
+    "name": "Gluconolactona poli-hidroxiácido pH 4 15%",
+    "brand": "Imagcev",
+    "presentation": "30 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0208.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0209",
+    "name": "Gluconolactona poli-hidroxiácido pH 4 15%",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0209.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0210",
+    "name": "Ashwagandha Gummies Mixed Berry",
+    "brand": "Goli Nutrition",
+    "presentation": "60 gomitas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0210.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0211",
+    "name": "Melatonina con Vitamina B12",
+    "brand": "",
+    "presentation": "",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0211.webp",
+    "note": "Presentación y contenido neto por confirmar. Confirmar marca, dosis y cantidad por envase.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0212",
+    "name": "Hair Growth Optimal Solutions",
+    "brand": "Nature's Bounty",
+    "presentation": "90 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0212.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0213",
+    "name": "Vitamina K2 + Vitamina D3",
+    "brand": "VitaHealth",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0213.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0214",
+    "name": "Lactobiónico poli-hidroxiácido pH 4 15%",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0214.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0215",
+    "name": "Lactobiónico poli-hidroxiácido pH 4 15%",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0215.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0216",
+    "name": "Lady Eros Fenogreco/Tongkat Ali",
+    "brand": "Labmac",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0216.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0217",
+    "name": "Leche limpiadora",
+    "brand": "Imagcev",
+    "presentation": "250 ml",
+    "category": "Limpieza facial",
+    "cover": "/catalogo-mg/MG-0217.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0218",
+    "name": "Vitamina D Liposomado",
+    "brand": "",
+    "presentation": "Gotero",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0218.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0219",
+    "name": "Magnesium Gluconate 550 mg",
+    "brand": "Alfa",
+    "presentation": "100 tabletas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0219.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0220",
+    "name": "Gel renovador celular con ácido mandélico 15%",
+    "brand": "Imagcev",
+    "presentation": "70 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0220.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0222",
+    "name": "MelUbiq Ubiquinona Melatonin Liposomado",
+    "brand": "Imagcev",
+    "presentation": "Gotero pequeño",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0222.webp",
+    "note": "Confirmar denominación completa y volumen.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0223",
+    "name": "MelUbiq Ubiquinona Melatonin Liposomado",
+    "brand": "Imagcev",
+    "presentation": "Gotero grande",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0223.webp",
+    "note": "Confirmar denominación completa y volumen.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0224",
+    "name": "Crema facial Modulador Melanogénico",
+    "brand": "Imagcev",
+    "presentation": "30 g",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0224.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0225",
+    "name": "Nanosomado de vitamina A",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0225.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0226",
+    "name": "Nanosomado de vitamina A",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0226.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0227",
+    "name": "Liposomado de niacinamida 1%",
+    "brand": "Imagcev",
+    "presentation": "",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0227.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0228",
+    "name": "Óxido de zinc",
+    "brand": "",
+    "presentation": "Tarro pequeño",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0228.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0231",
+    "name": "Pantalla completa SPF 50",
+    "brand": "Natural Center",
+    "presentation": "250 g; botella",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0231.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0232",
+    "name": "Acondicionador",
+    "brand": "MG",
+    "presentation": "300 ml; etiqueta naranja",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0232.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0233",
+    "name": "Miel & Avena Crema hidratante",
+    "brand": "MG",
+    "presentation": "1000 ml",
+    "category": "Cuidado capilar",
+    "cover": "/catalogo-mg/MG-0233.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0234",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel Seca",
+    "brand": "",
+    "presentation": "60 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0234.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0235",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel Seca",
+    "brand": "",
+    "presentation": "120 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0235.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0236",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel Normal",
+    "brand": "",
+    "presentation": "120 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0236.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0237",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel Normal",
+    "brand": "",
+    "presentation": "60 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0237.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0238",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel grasa y acneica",
+    "brand": "",
+    "presentation": "120 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0238.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0239",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel grasa y acneica",
+    "brand": "",
+    "presentation": "80 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0239.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0240",
+    "name": "Protector y pantalla solar FPS 50 UVA/UVB Piel grasa y acneica",
+    "brand": "",
+    "presentation": "60 g",
+    "category": "Protección solar",
+    "cover": "/catalogo-mg/MG-0240.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0241",
+    "name": "Resveratrol Jugo de Uva + C + B3",
+    "brand": "Living Natural",
+    "presentation": "60 cápsulas",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0241.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0242",
+    "name": "Rosácea Relief",
+    "brand": "",
+    "presentation": "70 g; etiqueta rosa",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0242.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0243",
+    "name": "Ácido salicílico BHA",
+    "brand": "Imagcev",
+    "presentation": "Gotero pequeño",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0243.webp",
+    "note": "Confirmar concentración y volumen.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0244",
+    "name": "Ácido salicílico BHA",
+    "brand": "Imagcev",
+    "presentation": "Gotero grande",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0244.webp",
+    "note": "Confirmar concentración y volumen.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0245",
+    "name": "Scrub de Uva Vinoterapia",
+    "brand": "Natural Center",
+    "presentation": "250 g",
+    "category": "Exfoliantes",
+    "cover": "/catalogo-mg/MG-0245.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0246",
+    "name": "Seda hidratante facial",
+    "brand": "Imagcev",
+    "presentation": "",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0246.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0247",
+    "name": "Sensual Body Sugar Scrub Exfoliante corporal",
+    "brand": "Professional Spa",
+    "presentation": "",
+    "category": "Exfoliantes",
+    "cover": "/catalogo-mg/MG-0247.webp",
+    "note": "Presentación y contenido neto por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0248",
+    "name": "Sérum de colágeno",
+    "brand": "",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0248.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0249",
+    "name": "Sérum de colágeno",
+    "brand": "",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0249.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0250",
+    "name": "Péptidos Efecto Botox Solución facial",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0250.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0251",
+    "name": "Péptidos Efecto Botox Solución facial",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0251.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0252",
+    "name": "Smart Mask",
+    "brand": "Imagcev",
+    "presentation": "Tarro",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0252.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0253",
+    "name": "Tónico aclarante Kójico Fítico Milenrama",
+    "brand": "Imagcev",
+    "presentation": "100 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0253.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0254",
+    "name": "Tónico de malva",
+    "brand": "Imagcev",
+    "presentation": "100 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0254.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0255",
+    "name": "Tónico de malva",
+    "brand": "Imagcev",
+    "presentation": "250 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0255.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0256",
+    "name": "Tónico de hierbas",
+    "brand": "Imagcev",
+    "presentation": "100 ml; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0256.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0257",
+    "name": "Tónico de hierbas",
+    "brand": "Imagcev",
+    "presentation": "250 ml; etiqueta azul",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0257.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0258",
+    "name": "Tónico de hierbas",
+    "brand": "Imagcev",
+    "presentation": "100 ml; etiqueta rosa",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0258.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0259",
+    "name": "Tónico de hierbas",
+    "brand": "Imagcev",
+    "presentation": "250 ml; etiqueta rosa",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0259.webp",
+    "note": "Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0260",
+    "name": "Té Verde Quemador de Grasa",
+    "brand": "Natural Medix",
+    "presentation": "100 cápsulas; 500 mg",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0260.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0261",
+    "name": "Lavande, Bois de Santal & Vanille",
+    "brand": "SOJA & CO.",
+    "presentation": "120 g; vela",
+    "category": "Aromaterapia",
+    "cover": "/catalogo-mg/MG-0261.webp",
+    "note": "Confirmar presentación comercial y tapa. La portada muestra el frasco abierto.",
+    "reviewStatus": "Pendiente de revisión"
+  },
+  {
+    "code": "MG-0262",
+    "name": "Vitamina C",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0262.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0263",
+    "name": "Vitamina C",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0263.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0264",
+    "name": "Vitamina E",
+    "brand": "Imagcev",
+    "presentation": "10 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0264.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0265",
+    "name": "Vitamina E",
+    "brand": "Imagcev",
+    "presentation": "50 ml",
+    "category": "Cuidado facial",
+    "cover": "/catalogo-mg/MG-0265.webp",
+    "note": "",
+    "reviewStatus": "Revisado visualmente"
+  },
+  {
+    "code": "MG-0266",
+    "name": "Zanahoria más Sábila",
+    "brand": "",
+    "presentation": "1 litro (1.000 ml); sabor frutos rojos",
+    "category": "Suplementos",
+    "cover": "/catalogo-mg/MG-0266.webp",
+    "note": "Marca por confirmar. Algunos datos de la etiqueta están pendientes de revisión.",
+    "reviewStatus": "Pendiente de revisión"
+  }
+]

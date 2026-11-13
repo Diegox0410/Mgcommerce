@@ -34,6 +34,13 @@ export default async function handler(request: ApiRequest, response: ApiResponse
     return json(response, 405, { error: 'Method not allowed' })
   }
 
+  // MG: pedidos web deshabilitados por defecto.
+  if (process.env.MG_ENABLE_WEB_ORDERS !== 'true') {
+    return json(response, 503, {
+      error: 'Los pedidos web no están habilitados. Consulta por WhatsApp.',
+    })
+  }
+
   let body: Record<string, unknown>
 
   try {

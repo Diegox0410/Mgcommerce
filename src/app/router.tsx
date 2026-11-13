@@ -1,5 +1,5 @@
 
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter, Navigate } from 'react-router-dom'
 import { lazy, Suspense, type ReactNode } from 'react'
 import { StorefrontLayout } from '../components/layout/StorefrontLayout'
 import { HomePage } from '../features/home/HomePage'
@@ -14,8 +14,8 @@ const AppointmentPage = lazy(() =>
 )
 
 const CatalogPage = lazy(() =>
-  import('../features/catalog/CatalogPage').then(
-    (m) => ({ default: m.CatalogPage }),
+  import('../features/catalog/MgCatalogPage').then(
+    (m) => ({ default: m.MgCatalogPage }),
   ),
 )
 
@@ -25,23 +25,8 @@ const ProductPage = lazy(() =>
   ),
 )
 
-const CartPage = lazy(() =>
-  import('../features/cart/CartPage').then(
-    (m) => ({ default: m.CartPage }),
-  ),
-)
 
-const CheckoutPage = lazy(() =>
-  import('../features/checkout/CheckoutPages').then(
-    (m) => ({ default: m.CheckoutPage }),
-  ),
-)
 
-const SuccessPage = lazy(() =>
-  import('../features/checkout/CheckoutPages').then(
-    (m) => ({ default: m.SuccessPage }),
-  ),
-)
 
 const AdminLayout = lazy(() =>
   import('../features/admin/AdminLayout').then(
@@ -90,9 +75,9 @@ export const router = createBrowserRouter([
       { path: '/citas', element: pending(<AppointmentPage />) },
       { path: '/catalogo', element: pending(<CatalogPage />) },
       { path: '/producto/:slug', element: pending(<ProductPage />) },
-      { path: '/carrito', element: pending(<CartPage />) },
-      { path: '/checkout', element: pending(<CheckoutPage />) },
-      { path: '/exito', element: pending(<SuccessPage />) },
+      { path: '/carrito', element: <Navigate to='/catalogo' replace /> },
+      { path: '/checkout', element: <Navigate to='/catalogo' replace /> },
+      { path: '/exito', element: <Navigate to='/catalogo' replace /> },
       { path: '*', element: <NotFoundPage /> },
     ],
   },

@@ -3,23 +3,16 @@ import {
   CalendarDays,
   Menu,
   Search,
-  ShoppingBag,
 } from 'lucide-react'
 import { Link, NavLink } from 'react-router-dom'
-import {
-  selectCartCount,
-  useCartStore,
-} from '../../stores/cart-store'
 import { useStorefrontUiStore } from '../../stores/storefront-ui-store'
 import { Drawer } from '../ui/Overlays'
 import { MGLogo } from '../branding/MGLogo'
 
 export function Header() {
-  const cartCount = useCartStore(selectCartCount)
 
   const {
     openSearch,
-    openCart,
     mobileNavOpen,
     setMobileNavOpen,
   } = useStorefrontUiStore()
@@ -78,19 +71,6 @@ export function Header() {
               <Search size={23} strokeWidth={1.8} />
             </button>
 
-            <button
-              type="button"
-              className="mg-header__icon mg-header__cart"
-              aria-label={`Abrir carrito, ${cartCount} artículos`}
-              onClick={openCart}
-            >
-              <ShoppingBag size={23} strokeWidth={1.8} />
-
-              {cartCount > 0 && (
-                <span>{cartCount}</span>
-              )}
-            </button>
-
             <Link
               className="mg-header__contact"
               to="/citas"
@@ -142,17 +122,6 @@ export function Header() {
           >
             <Search size={20} />
             Buscar productos
-          </button>
-
-          <button
-            type="button"
-            onClick={() => {
-              closeMenu()
-              openCart()
-            }}
-          >
-            <ShoppingBag size={20} />
-            Ver carrito ({cartCount})
           </button>
         </nav>
       </Drawer>

@@ -56,6 +56,7 @@ afterEach(() => {
   vi.restoreAllMocks()
   delete process.env.CHOPIFY_BASE_URL
   delete process.env.CHOPIFY_COMMERCE_API_TOKEN
+  delete process.env.MG_ENABLE_WEB_ORDERS
 })
 
 describe('MG orders API boundary', () => {
@@ -73,7 +74,23 @@ describe('MG orders API boundary', () => {
     expect(fetchMock).not.toHaveBeenCalled()
   })
 
+  it('rejects web orders when disabled', async () => {
+    delete process.env.MG_ENABLE_WEB_ORDERS
+
+    const fetchMock = vi.fn()
+    vi.stubGlobal('fetch', fetchMock)
+
+    const res = response()
+    await handler(validRequest(), res)
+
+    expect(res.statusCode).toBe(503)
+    expect(fetchMock).not.toHaveBeenCalled()
+
+    const payload = JSON.parse(res.body)
+    expect(payload.error).toContain('no están habilitados')
+  })
   it('rejects an empty order before calling Chopify', async () => {
+    process.env.MG_ENABLE_WEB_ORDERS = 'true'
     const fetchMock = vi.fn()
     vi.stubGlobal('fetch', fetchMock)
 
@@ -88,6 +105,7 @@ describe('MG orders API boundary', () => {
   })
 
   it('forces tenant-mg and strips browser commercial authority', async () => {
+    process.env.MG_ENABLE_WEB_ORDERS = 'true'
     process.env.CHOPIFY_BASE_URL = 'https://chopify.example'
     process.env.CHOPIFY_COMMERCE_API_TOKEN = 'server-secret'
 
@@ -176,6 +194,7 @@ describe('MG orders API boundary', () => {
   })
 
   it('maps a Chopify commercial rejection to 409', async () => {
+    process.env.MG_ENABLE_WEB_ORDERS = 'true'
     process.env.CHOPIFY_BASE_URL = 'https://chopify.example'
     process.env.CHOPIFY_COMMERCE_API_TOKEN = 'server-secret'
 

@@ -1,3 +1,4 @@
+import { MgInquiryProductCard } from './MgInquiryProductCard'
 import { ArrowUpRight, Heart, Plus } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { discountPercent, formatMoney, productPrice } from '../../domain/products/pricing'
@@ -10,6 +11,7 @@ import { ProductMedia } from './ProductMedia'
 export function ProductCard({ product }: { product: PublicProduct }) {
   const add = useCartStore((state) => state.add)
   const openCart = useStorefrontUiStore((state) => state.openCart)
+  if (product.images[0]?.url.startsWith('/catalogo-mg/')) return <MgInquiryProductCard product={product} />
   const variant = product.variants.length === 1 ? product.variants[0] : undefined
   const price = variant
     ? (variant.promotionalPrice ?? variant.regularPrice)
